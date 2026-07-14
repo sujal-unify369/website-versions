@@ -85,8 +85,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 this.speedX = (Math.random() - 0.5) * 0.3; // Much slower drift speed
                 this.speedY = (Math.random() - 0.5) * 0.3;
                 this.opacity = Math.random() * 0.4 + 0.1;
-                // Choose colors from sage green (#7f8e7b), terracotta (#c85a32), dusk pink (#d6a29a), or warm sand
-                const colors = ['#7f8e7b', '#c85a32', '#d6a29a', '#e8d8c8'];
+                // Choose colors from blue palette
+                const colors = ['#0063b3', '#1a1a2e', '#5ba3d9', '#8b9dc3'];
                 this.color = colors[Math.floor(Math.random() * colors.length)];
             }
             update() {
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     const dist = Math.sqrt(dx * dx + dy * dy);
                     if (dist < 180) {
                         ctx.beginPath();
-                        ctx.strokeStyle = '#7f8e7b'; // Soft sage green connection lines
+                        ctx.strokeStyle = '#0063b3'; // Blue connection lines
                         ctx.globalAlpha = 0.04 * (1 - dist / 180);
                         ctx.lineWidth = 0.5;
                         ctx.moveTo(particles[i].x, particles[i].y);
@@ -321,7 +321,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Move glow with mouse
             const glow = card.querySelector('.card-glow');
             if (glow) {
-                glow.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(0, 212, 255, 0.15), transparent 60%)`;
+                glow.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(0, 99, 179, 0.15), transparent 60%)`;
             }
         });
         card.addEventListener('mouseleave', () => {

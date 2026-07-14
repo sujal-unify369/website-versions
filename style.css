@@ -6,21 +6,21 @@
 
 /* ====== 1. CSS VARIABLES & RESET ====== */
 :root {
-    --bg-dark: #faf8f5; /* Off-white linen */
-    --bg-darker: #f5f0e6; /* Warm sand */
-    --bg-card: rgba(255, 255, 255, 0.65);
+    --bg-dark: #ffffff; /* Clean white */
+    --bg-darker: #f5f7fa; /* Cool light grey */
+    --bg-card: rgba(255, 255, 255, 0.75);
     --bg-card-hover: rgba(255, 255, 255, 0.95);
     
-    --primary-accent: #7f8e7b; /* Sage green */
-    --secondary-accent: #0063b3; /* Terracotta */
-    --dusk-pink: #d6a29a; /* Dusk pink */
-    --accent-glow: rgba(127, 142, 123, 0.15);
+    --primary-accent: #1a1a2e; /* Dark navy-black */
+    --secondary-accent: #0063b3; /* Blue */
+    --dusk-pink: #5ba3d9; /* Light blue */
+    --accent-glow: rgba(0, 99, 179, 0.12);
     
-    --text-main: #2f332e; /* Humanist dark charcoal-green */
-    --text-muted: #6c736a; /* Sage grey */
+    --text-main: #1a1a2e; /* Near-black */
+    --text-muted: #5a6370; /* Cool grey */
     --highlight: #ffd700;
-    --border-color: rgba(127, 142, 123, 0.12);
-    --border-hover: rgba(200, 90, 50, 0.3);
+    --border-color: rgba(0, 99, 179, 0.12);
+    --border-hover: rgba(0, 99, 179, 0.35);
     
     --font-serif: 'Cormorant Garamond', Georgia, serif;
     --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -54,8 +54,8 @@ body {
     
     /* Subtle linen/paper texture */
     background-image: 
-        linear-gradient(90deg, rgba(127, 142, 123, 0.02) 1px, transparent 1px),
-        linear-gradient(rgba(127, 142, 123, 0.02) 1px, transparent 1px);
+        linear-gradient(90deg, rgba(0, 99, 179, 0.02) 1px, transparent 1px),
+        linear-gradient(rgba(0, 99, 179, 0.02) 1px, transparent 1px);
     background-size: 24px 24px;
 }
 
@@ -173,7 +173,7 @@ h1, h2, h3, h4, h5, h6 {
 .preloader-bar {
     width: 140px;
     height: 1px;
-    background: rgba(127, 142, 123, 0.15);
+    background: rgba(0, 99, 179, 0.12);
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -202,7 +202,7 @@ h1, h2, h3, h4, h5, h6 {
     background: rgba(250, 248, 245, 0.92);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    box-shadow: 0 4px 30px rgba(127, 142, 123, 0.05);
+    box-shadow: 0 4px 30px rgba(0, 99, 179, 0.05);
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -316,7 +316,7 @@ h1, h2, h3, h4, h5, h6 {
     visibility: hidden;
     transform: translateY(10px);
     transition: var(--transition-normal);
-    box-shadow: 0 15px 35px rgba(127, 142, 123, 0.08);
+    box-shadow: 0 15px 35px rgba(0, 99, 179, 0.08);
 }
 
 .has-dropdown:hover .dropdown-menu {
@@ -344,7 +344,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .dropdown-menu li a:hover {
     color: var(--text-main);
-    background: rgba(127, 142, 123, 0.04);
+    background: rgba(0, 99, 179, 0.04);
     padding-left: 28px;
 }
 
@@ -397,8 +397,8 @@ h1, h2, h3, h4, h5, h6 {
     
     /* Sunbeam Light Visual Effect (warm terracotta & sand gradients) */
     background: 
-        radial-gradient(circle at 80% 20%, rgba(214, 162, 154, 0.12), transparent 45%),
-        radial-gradient(circle at 10% 80%, rgba(127, 142, 123, 0.08), transparent 40%),
+        radial-gradient(circle at 80% 20%, rgba(0, 99, 179, 0.08), transparent 45%),
+        radial-gradient(circle at 10% 80%, rgba(26, 26, 46, 0.05), transparent 40%),
         linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-darker) 100%);
 }
 
@@ -513,9 +513,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary:hover {
-    background: #af4d27;
+    background: #004a87;
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(200, 90, 50, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 99, 179, 0.2);
 }
 
 .btn-outline {
@@ -532,7 +532,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-outline:hover {
-    background: rgba(127, 142, 123, 0.05);
+    background: rgba(0, 99, 179, 0.04);
     transform: translateY(-2px);
 }
 
@@ -549,7 +549,7 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid var(--border-color);
     padding: 24px 50px;
     border-radius: 30px;
-    box-shadow: 0 10px 30px rgba(127, 142, 123, 0.03);
+    box-shadow: 0 10px 30px rgba(0, 99, 179, 0.04);
 }
 
 .stat-item {
@@ -582,7 +582,7 @@ h1, h2, h3, h4, h5, h6 {
 .stat-divider {
     width: 1px;
     height: 40px;
-    background: rgba(127, 142, 123, 0.15);
+    background: rgba(0, 99, 179, 0.1);
 }
 
 /* Scroll indicator */
@@ -639,7 +639,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--text-main);
     z-index: 2;
     pointer-events: none;
-    box-shadow: 0 8px 25px rgba(127, 142, 123, 0.05);
+    box-shadow: 0 8px 25px rgba(0, 99, 179, 0.05);
 }
 
 .floating-badge i {
@@ -708,14 +708,14 @@ h1, h2, h3, h4, h5, h6 {
 .glass-card:hover {
     border-color: var(--border-hover);
     transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(127, 142, 123, 0.06);
+    box-shadow: 0 20px 40px rgba(0, 99, 179, 0.06);
 }
 
 .card-icon {
     width: 54px;
     height: 54px;
     border-radius: 50%;
-    background: rgba(127, 142, 123, 0.06);
+    background: rgba(0, 99, 179, 0.05);
     border: 1px solid var(--border-color);
     display: flex;
     align-items: center;
@@ -764,7 +764,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-img-main img {
     border-radius: 30px;
-    box-shadow: 0 15px 40px rgba(127, 142, 123, 0.05);
+    box-shadow: 0 15px 40px rgba(0, 99, 179, 0.05);
     border: 1px solid var(--border-color);
 }
 
@@ -787,7 +787,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 18px 24px;
     border-radius: 20px;
     text-align: center;
-    box-shadow: 0 10px 25px rgba(127, 142, 123, 0.2);
+    box-shadow: 0 10px 25px rgba(0, 99, 179, 0.2);
     animation: float 6s infinite alternate ease-in-out;
 }
 
@@ -859,7 +859,7 @@ h1, h2, h3, h4, h5, h6 {
 .service-card {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
-    border-top: 2px solid rgba(127, 142, 123, 0.15);
+    border-top: 2px solid rgba(0, 99, 179, 0.12);
     border-radius: 24px;
     padding: 44px 32px;
     transition: var(--transition-normal);
@@ -869,7 +869,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-8px);
     border-top-color: var(--secondary-accent);
     border-color: var(--border-hover);
-    box-shadow: 0 20px 40px rgba(127, 142, 123, 0.05);
+    box-shadow: 0 20px 40px rgba(0, 99, 179, 0.05);
 }
 
 .service-card .service-icon {
@@ -1110,7 +1110,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background: rgba(127, 142, 123, 0.1);
+    background: rgba(0, 99, 179, 0.08);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1271,7 +1271,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 40px;
     right: 40px;
     font-size: 2.2rem;
-    color: rgba(127, 142, 123, 0.05);
+    color: rgba(0, 99, 179, 0.06);
 }
 
 .testimonial-card p {
@@ -1318,7 +1318,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background: rgba(127, 142, 123, 0.2);
+    background: rgba(0, 99, 179, 0.15);
     border: none;
     transition: var(--transition-normal);
 }
@@ -1331,7 +1331,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ====== 16. NEWSLETTER SECTION ====== */
 .newsletter-wrapper {
-    background: linear-gradient(135deg, rgba(214, 162, 154, 0.06), rgba(127, 142, 123, 0.06));
+    background: linear-gradient(135deg, rgba(0, 99, 179, 0.05), rgba(26, 26, 46, 0.04));
     border: 1px solid var(--border-color);
     padding: 60px;
     border-radius: 30px;
@@ -1402,7 +1402,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: rgba(127, 142, 123, 0.08);
+    background: rgba(0, 99, 179, 0.06);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1673,7 +1673,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 50px;
     height: 50px;
     border-color: var(--secondary-accent);
-    background-color: rgba(200, 90, 50, 0.03);
+    background-color: rgba(0, 99, 179, 0.04);
 }
 
 .dot-hover {
@@ -1689,7 +1689,7 @@ h1, h2, h3, h4, h5, h6 {
 .ripple {
     position: absolute;
     border-radius: 50%;
-    background: rgba(200, 90, 50, 0.15);
+    background: rgba(0, 99, 179, 0.12);
     transform: scale(0);
     animation: rippleEffect 0.6s linear;
     pointer-events: none;
@@ -1918,7 +1918,7 @@ h1, h2, h3, h4, h5, h6 {
 .theme-toggle:hover {
     border-color: var(--secondary-accent);
     color: var(--secondary-accent);
-    background: rgba(127, 142, 123, 0.06);
+    background: rgba(0, 99, 179, 0.05);
 }
 
 .theme-toggle .fa-sun { display: none; }
@@ -1929,20 +1929,20 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Dark mode color overrides */
 [data-theme="dark"] {
-    --bg-dark: #1a1a1a;
-    --bg-darker: #141414;
-    --bg-card: rgba(38, 38, 38, 0.75);
-    --bg-card-hover: rgba(50, 50, 50, 0.9);
+    --bg-dark: #0d1117;
+    --bg-darker: #0a0e14;
+    --bg-card: rgba(22, 27, 34, 0.85);
+    --bg-card-hover: rgba(30, 37, 48, 0.9);
 
-    --primary-accent: #a8b8a4;
-    --secondary-accent: #e07a52;
-    --dusk-pink: #c0857c;
-    --accent-glow: rgba(168, 184, 164, 0.1);
+    --primary-accent: #8b9dc3;
+    --secondary-accent: #4a9ede;
+    --dusk-pink: #5ba3d9;
+    --accent-glow: rgba(74, 158, 222, 0.1);
 
-    --text-main: #e8e6e3;
-    --text-muted: #9a9a9a;
+    --text-main: #e6edf3;
+    --text-muted: #8b949e;
     --border-color: rgba(255, 255, 255, 0.1);
-    --border-hover: rgba(224, 122, 82, 0.35);
+    --border-hover: rgba(74, 158, 222, 0.4);
 }
 
 /* Body & html in dark mode */
@@ -1962,13 +1962,13 @@ body[data-theme="dark"] {
 
 /* Navbar */
 [data-theme="dark"] .navbar.scrolled {
-    background: rgba(26, 26, 26, 0.94);
+    background: rgba(13, 17, 23, 0.94);
     border-bottom: 1px solid var(--border-color);
 }
 
 /* Dropdown menu */
 [data-theme="dark"] .dropdown-menu {
-    background: rgba(30, 30, 30, 0.98);
+    background: rgba(22, 27, 34, 0.98);
     border: 1px solid var(--border-color);
 }
 
@@ -1978,16 +1978,16 @@ body[data-theme="dark"] {
 
 /* Mobile nav panel */
 [data-theme="dark"] .nav-links {
-    background: rgba(26, 26, 26, 0.98);
+    background: rgba(13, 17, 23, 0.98);
     border-left: 1px solid var(--border-color);
 }
 
 /* Hero section */
 [data-theme="dark"] .hero-section {
     background:
-        radial-gradient(circle at 80% 20%, rgba(224, 122, 82, 0.08), transparent 45%),
-        radial-gradient(circle at 10% 80%, rgba(168, 184, 164, 0.06), transparent 40%),
-        linear-gradient(135deg, #1a1a1a 0%, #141414 100%);
+        radial-gradient(circle at 80% 20%, rgba(0, 99, 179, 0.08), transparent 45%),
+        radial-gradient(circle at 10% 80%, rgba(26, 26, 46, 0.06), transparent 40%),
+        linear-gradient(135deg, #0d1117 0%, #0a0e14 100%);
 }
 
 [data-theme="dark"] .hero-section::before {
@@ -2002,20 +2002,20 @@ body[data-theme="dark"] {
 
 /* Hero tag badge */
 [data-theme="dark"] .hero-tag {
-    background: rgba(50, 50, 50, 0.6);
+    background: rgba(22, 27, 34, 0.7);
     border: 1px solid var(--border-color);
 }
 
 /* Floating badges */
 [data-theme="dark"] .floating-badge {
-    background: rgba(40, 40, 40, 0.75);
+    background: rgba(22, 27, 34, 0.8);
     border: 1px solid var(--border-color);
     color: var(--text-main);
 }
 
 /* Hero stats bar */
 [data-theme="dark"] .hero-stats {
-    background: rgba(38, 38, 38, 0.55);
+    background: rgba(22, 27, 34, 0.6);
     border: 1px solid var(--border-color);
 }
 
@@ -2031,7 +2031,7 @@ body[data-theme="dark"] {
 
 /* Card icon */
 [data-theme="dark"] .card-icon {
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(0, 99, 179, 0.06);
     border: 1px solid var(--border-color);
 }
 
@@ -2039,7 +2039,7 @@ body[data-theme="dark"] {
 [data-theme="dark"] .service-card {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
-    border-top: 2px solid rgba(255, 255, 255, 0.08);
+    border-top: 2px solid rgba(0, 99, 179, 0.15);
 }
 
 [data-theme="dark"] .service-card:hover {
@@ -2049,7 +2049,7 @@ body[data-theme="dark"] {
 
 /* Process steps */
 [data-theme="dark"] .step-number {
-    background: rgba(50, 50, 50, 0.8);
+    background: rgba(22, 27, 34, 0.8);
     border: 1px solid var(--border-color);
 }
 
@@ -2062,7 +2062,7 @@ body[data-theme="dark"] {
 /* Tech tabs */
 [data-theme="dark"] .tech-tab {
     border: 1px solid var(--border-color);
-    background: rgba(40, 40, 40, 0.6);
+    background: rgba(22, 27, 34, 0.6);
     color: var(--text-muted);
 }
 
@@ -2111,14 +2111,14 @@ body[data-theme="dark"] {
 /* Slider arrows */
 [data-theme="dark"] .slider-arrow {
     border: 1px solid var(--border-color);
-    background: rgba(40, 40, 40, 0.6);
+    background: rgba(22, 27, 34, 0.6);
     color: var(--text-muted);
 }
 
 [data-theme="dark"] .slider-arrow:hover {
     border-color: var(--primary-accent);
     color: var(--primary-accent);
-    background: rgba(60, 60, 60, 0.8);
+    background: rgba(30, 37, 48, 0.8);
 }
 
 /* Dots */
@@ -2132,12 +2132,12 @@ body[data-theme="dark"] {
 
 /* Newsletter */
 [data-theme="dark"] .newsletter-wrapper {
-    background: linear-gradient(135deg, rgba(224, 122, 82, 0.05), rgba(168, 184, 164, 0.05));
+    background: linear-gradient(135deg, rgba(0, 99, 179, 0.06), rgba(26, 26, 46, 0.05));
     border: 1px solid var(--border-color);
 }
 
 [data-theme="dark"] .newsletter-input {
-    background: rgba(40, 40, 40, 0.7);
+    background: rgba(22, 27, 34, 0.7);
     border: 1px solid var(--border-color);
     color: var(--text-main);
 }
@@ -2157,7 +2157,7 @@ body[data-theme="dark"] {
 }
 
 [data-theme="dark"] .contact-card .contact-icon {
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(0, 99, 179, 0.06);
 }
 
 /* Footer */
@@ -2168,7 +2168,7 @@ body[data-theme="dark"] {
 
 [data-theme="dark"] .footer-social a {
     border: 1px solid var(--border-color);
-    background: rgba(40, 40, 40, 0.5);
+    background: rgba(22, 27, 34, 0.5);
     color: var(--text-muted);
 }
 
@@ -2197,16 +2197,16 @@ body[data-theme="dark"] {
 }
 
 [data-theme="dark"] .adv-icon {
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(0, 99, 179, 0.08);
 }
 
 /* Custom scrollbar in dark mode */
 [data-theme="dark"] ::-webkit-scrollbar-track {
-    background: #1a1a1a;
+    background: #0d1117;
 }
 
 [data-theme="dark"] ::-webkit-scrollbar-thumb {
-    background: #555;
+    background: #30363d;
 }
 
 [data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
@@ -2215,7 +2215,7 @@ body[data-theme="dark"] {
 
 /* Custom cursor in dark mode */
 [data-theme="dark"] .custom-cursor {
-    border-color: rgba(168, 184, 164, 0.5);
+    border-color: rgba(74, 158, 222, 0.4);
 }
 
 /* Image brightness in dark mode */
