@@ -3,6 +3,10 @@
 // ============================================================
 
 document.addEventListener('DOMContentLoaded', () => {
+    // ========== DARK MODE - Apply saved theme immediately ==========
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+
     // ========== PRELOADER ==========
     const preloader = document.getElementById('preloader');
     window.addEventListener('load', () => {
@@ -680,18 +684,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // ========== DARK MODE TOGGLE ==========
+    const themeToggle = document.getElementById('themeToggle');
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+    }
+
     console.log('🚀 Unify Technologies - Dynamic Website Loaded Successfully!');
-});
-const themeToggle = document.getElementById('themeToggle');
-const htmlEl = document.documentElement;
-
-// Load saved theme (or default to light)
-const savedTheme = localStorage.getItem('theme') || 'light';
-htmlEl.setAttribute('data-theme', savedTheme);
-
-themeToggle.addEventListener('click', () => {
-    const currentTheme = htmlEl.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    htmlEl.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
 });

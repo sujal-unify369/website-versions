@@ -22,6 +22,14 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Apply saved theme before render to prevent flash -->
+    <script>
+        (function() {
+            var theme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
 </head>
 <body>
 
@@ -73,6 +81,11 @@
                 <li><a href="about.html" class="nav-link">About Us</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
+
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
 
             <a href="#contact" class="nav-cta" id="nav-cta">
                 <span>Free Quote</span>
@@ -731,8 +744,7 @@
             <div class="footer-grid">
                 <div class="footer-col footer-about">
                     <a href="#" class="footer-logo">
-                        <span class="logo-icon">U</span>
-                        <span class="logo-text">Unify<span class="logo-accent">Tech</span></span>
+                        <img class = "image" height="100px" width="140px" src="logo.png">
                     </a>
                     <p>Unify-Tech is a tech-savvy, robust and cutting-edge company that empowers businesses with the touch of a Digital Landscape.</p>
                     <div class="footer-contact-info">
