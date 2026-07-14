@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unify Technologies - Software and Web Development Company</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .details-page-section {
+            padding-top: 150px;
+            padding-bottom: 100px;
+            min-height: 80vh;
+        }
+        .details-wrapper h2.sotcox-title {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #fff;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        .details-wrapper p {
+            color: var(--text-muted);
+            margin-bottom: 24px;
+            line-height: 1.7;
+        }
+        .details-wrapper ul.blog-list-item {
+            margin: 24px 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+        .details-wrapper ul.blog-list-item li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 600;
+            color: #fff;
+        }
+        .details-wrapper ul.blog-list-item li img {
+            width: 16px;
+            height: 16px;
+        }
+        .details-wrapper ul.blog-list-item p {
+            grid-column: 1 / -1;
+            margin-top: -8px;
+            margin-bottom: 16px;
+            padding-left: 28px;
+            font-style: italic;
+        }
+        .sotcox-btn {
+            background: linear-gradient(135deg, var(--primary-accent), var(--secondary-accent));
+            padding: 14px 28px;
+            border-radius: 30px;
+            font-weight: 700;
+            color: #fff;
+            display: inline-flex;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.25);
+            margin: 20px 0;
+        }
+        .sotcox-btn:hover {
+            box-shadow: 0 8px 30px var(--accent-glow);
+            transform: translateY(-2px);
+        }
+        .details-thumb img {
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ====== CUSTOM CURSOR ====== -->
+    <div class="custom-cursor" id="customCursor"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <!-- ====== PRELOADER ====== -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo">U</div>
+            <div class="preloader-text">UNIFY TECH</div>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====== NAVIGATION ====== -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" id="nav-logo">
+                <span class="logo-icon">U</span>
+                <span class="logo-text">Unify<span class="logo-accent">Tech</span></span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li class="has-dropdown">
+                    <a href="index.html#services" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="web-development.html"><i class="fas fa-globe"></i> Web Development</a></li>
+                        <li><a href="mobile-app-solutions.html"><i class="fas fa-mobile-alt"></i> Mobile App Solutions</a></li>
+                        <li><a href="ui-ux-design.html"><i class="fas fa-palette"></i> UI/UX Design</a></li>
+                        <li><a href="custom-software-development.html"><i class="fas fa-cogs"></i> Enterprise Software</a></li>
+                        <li><a href="fin-tech-development.html"><i class="fas fa-chart-line"></i> FinTech Development</a></li>
+                        <li><a href="iot-development.html"><i class="fas fa-microchip"></i> IoT Development</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="index.html#industries" class="nav-link">Industries <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="healthcare-industries.html"><i class="fas fa-heartbeat"></i> Healthcare</a></li>
+                        <li><a href="ecommerce.html"><i class="fas fa-shopping-cart"></i> E-commerce</a></li>
+                        <li><a href="education-industries.html"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                        <li><a href="logistics.html"><i class="fas fa-truck"></i> Logistics</a></li>
+                        <li><a href="food.html"><i class="fas fa-utensils"></i> Food & Grocery</a></li>
+                        <li><a href="fitness.html"><i class="fas fa-dumbbell"></i> Fitness</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <a href="contact.html" class="nav-cta" id="nav-cta">
+                <span>Free Quote</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+            <button class="mobile-menu-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+
+    <!-- ====== DETAILS PAGE ====== -->
+    <section class="details-page-section">
+        <div class="container">
+            <div class="about-grid" style="grid-template-columns: 1.3fr 0.7fr; align-items: start;">
+                <div class="details-wrapper reveal">
+                    <div class="details-content">
+                            <h2 class="sotcox-title mb-15"> Trendsetting Fitness App Development Services</h2>
+                            
+                            <p>Spearhead your fitness business with our flawless digital solutions </p>
+
+
+                            <h2 class="sotcox-title mb-15"> Our World-Class Services Offer a Myriad of Features </h2>
+                            <p>Give your customers an exceptional app integrated with latest features</p>
+                             <ul class="list-unstyled blog-list-item">
+                                <li>
+                                    <img src="assets/img/icons/star.png" alt="">
+                                    Smart Fitness Coach    
+                                </li>
+                                <li><img src="assets/img/icons/star.png" alt="">
+                                    Live Workout Classes   
+                                </li>
+                                <li><img src="assets/img/icons/star.png" alt="">
+                                    Personalized Diet Plans 
+                                </li>
+                                <li><img src="assets/img/icons/star.png" alt="">
+                                    Get real time Support   
+                                </li>
+                                 <li><img src="assets/img/icons/star.png" alt="">
+                                    Track Workouts   
+                                </li>
+                            </ul>
+
+                             <div class="details-thumb mt-25">
+                                <img src="assets/img/banner/fitness_inner.jpg" alt="img">
+                            </div>
+
+                            <h3 class="mt-50 mb-25">Tailored Fitness App Development Services for Your Specific Business </h3>
+                            <p>Automate your Business Operations with our competent Health and Fitness App Development Modules </p>
+
+                            <ul class="list-unstyled blog-list-item mb-25">
+                                <li><b>Wearable Devices </b>–</li>
+                                <li>
+                                    Monitor your user's fitness levels with integrated app development services    
+                                </li>
+                                <li><b>Trackers for Gymnasiums/Personal Training </b>–</li>
+                                <li>
+                                     Assist your coaches and high-end gyms to give their users a dedicated workout app         
+                                </li>
+                                <li><b>Yoga/Meditation </b>–</li>
+                                <li>
+                                     Scale your Yoga/Meditation business with our impressive app development services.       
+                                </li>
+
+                                <li><b>Fitness Tracking</b>–</li>
+                                <li>
+                                     Make fitness tracking seamless & provide best features and functionality to your customers        
+                                </li>
+
+                                <li><b>Nutritional Diet  </b>–</li>
+                                <li>
+                                     Provide your customers with a holistic experience with a wholesome nutrition & diet plan.        
+                                </li>
+                            </ul>
+                            
+
+                        </div>
+                </div>
+                <div class="sidebar-wrapper reveal" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 24px; padding: 30px; position: sticky; top: 100px;">
+                    <h3 style="font-size: 1.3rem; margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">Our Services</h3>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 14px;">
+                        <li><a href="web-development.html" style="color: var(--text-muted); display: flex; justify-content: space-between;"><span>Web Development</span><i class="fas fa-chevron-right" style="font-size: 0.8rem; color: var(--primary-accent);"></i></a></li>
+                        <li><a href="mobile-app-solutions.html" style="color: var(--text-muted); display: flex; justify-content: space-between;"><span>Mobile Solutions</span><i class="fas fa-chevron-right" style="font-size: 0.8rem; color: var(--primary-accent);"></i></a></li>
+                        <li><a href="ui-ux-design.html" style="color: var(--text-muted); display: flex; justify-content: space-between;"><span>UI/UX Design</span><i class="fas fa-chevron-right" style="font-size: 0.8rem; color: var(--primary-accent);"></i></a></li>
+                        <li><a href="custom-software-development.html" style="color: var(--text-muted); display: flex; justify-content: space-between;"><span>Enterprise Software</span><i class="fas fa-chevron-right" style="font-size: 0.8rem; color: var(--primary-accent);"></i></a></li>
+                        <li><a href="fin-tech-development.html" style="color: var(--text-muted); display: flex; justify-content: space-between;"><span>FinTech Solutions</span><i class="fas fa-chevron-right" style="font-size: 0.8rem; color: var(--primary-accent);"></i></a></li>
+                        <li><a href="iot-development.html" style="color: var(--text-muted); display: flex; justify-content: space-between;"><span>IoT Development</span><i class="fas fa-chevron-right" style="font-size: 0.8rem; color: var(--primary-accent);"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">U</span>
+                        <span class="logo-text">Unify<span class="logo-accent">Tech</span></span>
+                    </a>
+                    <p>Unify-Tech is a tech-savvy, robust and cutting-edge company that empowers businesses with the touch of a Digital Landscape.</p>
+                    <div class="footer-contact-info">
+                        <p><i class="fas fa-envelope"></i> info@unifytechsolutions.com</p>
+                        <p><i class="fas fa-phone"></i> +1 (216) 503 2302</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Plot 10, World Tech Tower, Sector 67, Mohali</p>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="web-development.html">Web Development</a></li>
+                        <li><a href="mobile-app-solutions.html">Mobile App Solutions</a></li>
+                        <li><a href="ui-ux-design.html">UI/UX Design</a></li>
+                        <li><a href="custom-software-development.html">Custom Software</a></li>
+                        <li><a href="fin-tech-development.html">FinTech Solutions</a></li>
+                        <li><a href="iot-development.html">IoT Development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="index.html#services">Our Services</a></li>
+                        <li><a href="index.html#industries">Industries</a></li>
+                        <li><a href="contact.html">Career</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <p>Stay connected with us on social media for the latest updates.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/profile.php?id=100092164787200" target="_blank" aria-label="Facebook" id="social-facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/unifytechnologies/" target="_blank" aria-label="Instagram" id="social-instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter" id="social-twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn" id="social-linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Copyright &copy; <span id="copyright-year"></span> Unify Tech, All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ====== BACK TO TOP ====== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+
+    <!-- ====== JAVASCRIPT ====== -->
+    <script src="script.js"></script>
+</body>
+</html>

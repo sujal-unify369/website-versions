@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Unify Technologies</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .details-page-section {
+            padding-top: 150px;
+            padding-bottom: 100px;
+            min-height: 80vh;
+        }
+        .contact-form-container {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+        .contact-form-container h2 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 24px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-muted);
+        }
+        .form-control {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 14px 18px;
+            color: #fff;
+            outline: none;
+            font-family: inherit;
+            font-size: 0.95rem;
+            transition: var(--transition-normal);
+        }
+        .form-control:focus {
+            border-color: var(--primary-accent);
+            box-shadow: 0 0 15px rgba(0, 212, 255, 0.1);
+        }
+        .btn-submit {
+            background: linear-gradient(135deg, var(--primary-accent), var(--secondary-accent));
+            color: #fff;
+            font-weight: 700;
+            width: 100%;
+            padding: 16px;
+            border-radius: 12px;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.25);
+            transition: var(--transition-normal);
+        }
+        .btn-submit:hover {
+            box-shadow: 0 8px 30px var(--accent-glow);
+            transform: translateY(-2px);
+        }
+        .contact-info-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-top: 30px;
+        }
+        .contact-info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+        .contact-info-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            background: rgba(0, 212, 255, 0.1);
+            border: 1px solid var(--primary-accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-accent);
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        .contact-info-text h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+        .contact-info-text p, .contact-info-text a {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ====== CUSTOM CURSOR ====== -->
+    <div class="custom-cursor" id="customCursor"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <!-- ====== PRELOADER ====== -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo">U</div>
+            <div class="preloader-text">UNIFY TECH</div>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====== NAVIGATION ====== -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" id="nav-logo">
+                <span class="logo-icon">U</span>
+                <span class="logo-text">Unify<span class="logo-accent">Tech</span></span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li class="has-dropdown">
+                    <a href="index.html#services" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="web-development.html"><i class="fas fa-globe"></i> Web Development</a></li>
+                        <li><a href="mobile-app-solutions.html"><i class="fas fa-mobile-alt"></i> Mobile App Solutions</a></li>
+                        <li><a href="ui-ux-design.html"><i class="fas fa-palette"></i> UI/UX Design</a></li>
+                        <li><a href="custom-software-development.html"><i class="fas fa-cogs"></i> Enterprise Software</a></li>
+                        <li><a href="fin-tech-development.html"><i class="fas fa-chart-line"></i> FinTech Development</a></li>
+                        <li><a href="iot-development.html"><i class="fas fa-microchip"></i> IoT Development</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="index.html#industries" class="nav-link">Industries <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="healthcare-industries.html"><i class="fas fa-heartbeat"></i> Healthcare</a></li>
+                        <li><a href="ecommerce.html"><i class="fas fa-shopping-cart"></i> E-commerce</a></li>
+                        <li><a href="education-industries.html"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                        <li><a href="logistics.html"><i class="fas fa-truck"></i> Logistics</a></li>
+                        <li><a href="food.html"><i class="fas fa-utensils"></i> Food & Grocery</a></li>
+                        <li><a href="fitness.html"><i class="fas fa-dumbbell"></i> Fitness</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+
+            <a href="contact.html" class="nav-cta" id="nav-cta">
+                <span>Free Quote</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+            <button class="mobile-menu-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ====== DETAILS PAGE ====== -->
+    <section class="details-page-section">
+        <div class="container">
+            <div class="about-grid" style="grid-template-columns: 1.1fr 0.9fr; gap: 60px; align-items: start;">
+                <div class="contact-form-container reveal">
+                    <h2>Get In Touch</h2>
+                    <form id="contactForm" onsubmit="event.preventDefault(); alert('Message sent successfully! We will get back to you shortly.'); this.reset();">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" class="form-control" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" placeholder="Enter message subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" class="form-control" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact-info-container reveal" style="padding-top: 20px;">
+                    <div class="section-header section-header-left" style="margin-bottom: 30px;">
+                        <span class="sub-heading">Contact Details</span>
+                        <h2>Let's build something <span class="gradient-text">extraordinary</span> together</h2>
+                    </div>
+                    <p style="color: var(--text-muted); line-height: 1.7;">Get in touch with us to schedule a free demo session, discuss project wireframes, or explore development strategies tailored exactly for your venture.</p>
+                    
+                    <ul class="contact-info-list">
+                        <li class="contact-info-item">
+                            <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-info-text">
+                                <h4>Our Office</h4>
+                                <p>Plot 10, World Tech Tower, Sector 67, Mohali</p>
+                            </div>
+                        </li>
+                        <li class="contact-info-item">
+                            <div class="contact-info-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="contact-info-text">
+                                <h4>Phone Number</h4>
+                                <a href="tel:+12165032302">+1 (216) 503 2302</a>
+                            </div>
+                        </li>
+                        <li class="contact-info-item">
+                            <div class="contact-info-icon"><i class="fas fa-envelope-open-text"></i></div>
+                            <div class="contact-info-text">
+                                <h4>Email Address</h4>
+                                <a href="mailto:info@unifytechsolutions.com">info@unifytechsolutions.com</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">U</span>
+                        <span class="logo-text">Unify<span class="logo-accent">Tech</span></span>
+                    </a>
+                    <p>Unify-Tech is a tech-savvy, robust and cutting-edge company that empowers businesses with the touch of a Digital Landscape.</p>
+                    <div class="footer-contact-info">
+                        <p><i class="fas fa-envelope"></i> info@unifytechsolutions.com</p>
+                        <p><i class="fas fa-phone"></i> +1 (216) 503 2302</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Plot 10, World Tech Tower, Sector 67, Mohali</p>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="web-development.html">Web Development</a></li>
+                        <li><a href="mobile-app-solutions.html">Mobile App Solutions</a></li>
+                        <li><a href="ui-ux-design.html">UI/UX Design</a></li>
+                        <li><a href="custom-software-development.html">Custom Software</a></li>
+                        <li><a href="fin-tech-development.html">FinTech Solutions</a></li>
+                        <li><a href="iot-development.html">IoT Development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="index.html#services">Our Services</a></li>
+                        <li><a href="index.html#industries">Industries</a></li>
+                        <li><a href="contact.html">Career</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <p>Stay connected with us on social media for the latest updates.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/profile.php?id=100092164787200" target="_blank" aria-label="Facebook" id="social-facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/unifytechnologies/" target="_blank" aria-label="Instagram" id="social-instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter" id="social-twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn" id="social-linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Copyright &copy; <span id="copyright-year"></span> Unify Tech, All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ====== BACK TO TOP ====== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

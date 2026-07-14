@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Unify Technologies - Premier software and web development company transforming businesses into brands with cutting-edge tech and innovation.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Unify Technologies">
+    <meta property="og:title" content="Unify Technologies - Software & Web Development">
+    <meta property="og:description" content="Transforming businesses into brands with TECH & INNOVATION. Premium IT solutions delivered with experience and expertise.">
+    <title>Unify Technologies - Software and Web Development Company</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ====== CUSTOM CURSOR ====== -->
+    <div class="custom-cursor" id="customCursor"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <!-- ====== PRELOADER ====== -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo">U</div>
+            <div class="preloader-text">UNIFY TECH</div>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====== NAVIGATION ====== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" id="nav-logo">
+                <span class="logo-icon">U</span>
+                <span class="logo-text">Unify<span class="logo-accent">Tech</span></span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li class="has-dropdown">
+                    <a href="#services" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="web-development.html"><i class="fas fa-globe"></i> Web Development</a></li>
+                        <li><a href="mobile-app-solutions.html"><i class="fas fa-mobile-alt"></i> Mobile App Solutions</a></li>
+                        <li><a href="ui-ux-design.html"><i class="fas fa-palette"></i> UI/UX Design</a></li>
+                        <li><a href="custom-software-development.html"><i class="fas fa-cogs"></i> Enterprise Software</a></li>
+                        <li><a href="fin-tech-development.html"><i class="fas fa-chart-line"></i> FinTech Development</a></li>
+                        <li><a href="iot-development.html"><i class="fas fa-microchip"></i> IoT Development</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#industries" class="nav-link">Industries <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="healthcare-industries.html"><i class="fas fa-heartbeat"></i> Healthcare</a></li>
+                        <li><a href="ecommerce.html"><i class="fas fa-shopping-cart"></i> E-commerce</a></li>
+                        <li><a href="education-industries.html"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                        <li><a href="logistics.html"><i class="fas fa-truck"></i> Logistics</a></li>
+                        <li><a href="food.html"><i class="fas fa-utensils"></i> Food & Grocery</a></li>
+                        <li><a href="fitness.html"><i class="fas fa-dumbbell"></i> Fitness</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <a href="#contact" class="nav-cta" id="nav-cta">
+                <span>Free Quote</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+            <button class="mobile-menu-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ====== HERO SECTION ====== -->
+    <section id="hero" class="hero-section">
+        <canvas id="particles-canvas"></canvas>
+        <div class="hero-gradient-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+
+        <div class="floating-badge badge-1">
+            <i class="fas fa-shield-alt"></i> Secure & Reliable
+        </div>
+        <div class="floating-badge badge-2">
+            <i class="fas fa-bolt"></i> High Performance
+        </div>
+        <div class="floating-badge badge-3">
+            <i class="fas fa-rocket"></i> Fast Delivery
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-tag reveal">
+                <span class="tag-dot"></span>
+                Leading IT Solutions Provider
+            </div>
+            <h1 class="hero-title reveal">
+                Transforming Business into<br>
+                <span class="gradient-text">Brands</span> with 
+                <span class="gradient-text">TECH</span> &amp; 
+                <span class="gradient-text">INNOVATION</span>
+            </h1>
+            <p class="hero-subtitle reveal">
+                We take pride in delivering premium IT solutions with our experience &amp; expertise.<span class="typing-cursor">|</span>
+            </p>
+            <div class="hero-cta-group reveal">
+                <a href="#contact" class="btn-primary" id="hero-cta-primary">
+                    <span>Schedule a Free Demo</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#services" class="btn-outline" id="hero-cta-secondary">
+                    <span>Explore Services</span>
+                    <i class="fas fa-play"></i>
+                </a>
+            </div>
+            <div class="hero-stats reveal">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="150">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Projects Delivered</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="50">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="5">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="30">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Team Members</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- ====== 5D SERVICES SECTION ====== -->
+    <section class="services-5d" id="services-5d">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="sub-heading">Our Core Pillars</span>
+                <h2>Our Services Revolve Around <span class="gradient-text">5 D's!</span></h2>
+                <p>Dedication, Diligence, Determination, Development &amp; Deployment</p>
+            </div>
+            <div class="cards-grid">
+                <div class="glass-card reveal" data-tilt>
+                    <div class="card-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Dedicated IT Solutions</h3>
+                    <p>Avail 100% customizable IT Solutions, developed with the best tech-stack and industry analysis.</p>
+                    <div class="card-glow"></div>
+                </div>
+                <div class="glass-card reveal" data-tilt>
+                    <div class="card-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Cross Industry Expertise</h3>
+                    <p>Our skillful developers excel in building applications, websites and software for every industry.</p>
+                    <div class="card-glow"></div>
+                </div>
+                <div class="glass-card reveal" data-tilt>
+                    <div class="card-icon">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                    <h3>Robust &amp; Scalable</h3>
+                    <p>Availing services from Unify Tech is synonymous with availing bug-free and tech-savvy services.</p>
+                    <div class="card-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== ABOUT SECTION ====== -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images reveal">
+                    <div class="about-img-main">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop" alt="Team collaboration at Unify Tech" loading="lazy">
+                    </div>
+                    <div class="about-img-secondary">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop" alt="Modern office workspace" loading="lazy">
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-number">5+</span>
+                        <span class="exp-text">Years of<br>Excellence</span>
+                    </div>
+                </div>
+                <div class="about-content reveal">
+                    <div class="section-header section-header-left">
+                        <span class="sub-heading">What is Tackled by Unify Tech?</span>
+                        <h2>Our digital experts take charge of <span class="gradient-text">revolutionizing</span> your businesses digitally!</h2>
+                    </div>
+                    <p class="about-description">
+                        Unify Tech is a next-gen IT solutions provider that transforms businesses into brands with an absolute suite of digital services.
+                    </p>
+                    <h3 class="about-offer-title">We Offer</h3>
+                    <ul class="feature-list">
+                        <li>
+                            <span class="feature-icon"><i class="fas fa-check-circle"></i></span>
+                            <span>Unique Approach</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon"><i class="fas fa-check-circle"></i></span>
+                            <span>Tailored Solutions</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon"><i class="fas fa-check-circle"></i></span>
+                            <span>Validation &amp; Prototyping</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon"><i class="fas fa-check-circle"></i></span>
+                            <span>Leading Edge Services</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon"><i class="fas fa-check-circle"></i></span>
+                            <span>Agile Development Process</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn-primary">
+                        <span>Explore More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== SERVICES SECTION ====== -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="sub-heading">Services We Offer</span>
+                <h2>Skyrocket Your Venture with Our<br><span class="gradient-text">Comprehensive Digital Solutions</span></h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile App Development</h3>
+                    <p>We tailor your application with robust &amp; scalable platform diversity and user-centric features.</p>
+                    <a href="mobile-app-solutions.html" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Web App Development</h3>
+                    <p>We redefine every individual element of your website that navigates functionalities with feasibility.</p>
+                    <a href="web-development.html" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>UI/UX Designing</h3>
+                    <p>We craft useful, usable, desirable, findable, accessible &amp; credible designs for your brand.</p>
+                    <a href="ui-ux-design.html" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>IoT App Development</h3>
+                    <p>Beyond connectivity we ensure tech-feasible data processing, user interfaces &amp; interoperability.</p>
+                    <a href="iot-development.html" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Enterprise Software</h3>
+                    <p>Our ERP development streamlines data analysis, automation and full-scale infrastructure integration.</p>
+                    <a href="custom-software-development.html" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>FinTech Development</h3>
+                    <p>With big data analysis and application programming interface, we develop booming FinTech solutions.</p>
+                    <a href="fin-tech-development.html" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== PROCESS / WORKFLOW SECTION ====== -->
+    <section id="process" class="process-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="sub-heading">Our Agile Development Process</span>
+                <h2>Here's the Roadmap of Your<br><span class="gradient-text">Exquisite Solution's</span> Development!</h2>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step reveal">
+                    <div class="step-number">01</div>
+                    <div class="step-icon"><i class="fas fa-pencil-ruler"></i></div>
+                    <h3>Wireframing</h3>
+                    <p>With proper mind mapping, brainstorming, and concept testing we ensure a thorough understanding of the requirements.</p>
+                </div>
+                <div class="process-connector"></div>
+                <div class="process-step reveal">
+                    <div class="step-number">02</div>
+                    <div class="step-icon"><i class="fas fa-code"></i></div>
+                    <h3>Development Stage</h3>
+                    <p>The development begins with the creation of the admin panel, followed by the core development process with performance testing.</p>
+                </div>
+                <div class="process-connector"></div>
+                <div class="process-step reveal">
+                    <div class="step-number">03</div>
+                    <div class="step-icon"><i class="fas fa-bug"></i></div>
+                    <h3>Quality Assurance</h3>
+                    <p>We adeptly test the solution for ensuring seamless performance. QA helps us detect potential risks in early stages.</p>
+                </div>
+                <div class="process-connector"></div>
+                <div class="process-step reveal">
+                    <div class="step-number">04</div>
+                    <div class="step-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Launch &amp; Deployment</h3>
+                    <p>After the solution passes QA testing, we finalize the platforms and deploy your solution to production.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== TECH STACK SECTION ====== -->
+    <section id="tech-stack" class="tech-stack-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="sub-heading">Our Tech Stack</span>
+                <h2>Our <span class="gradient-text">Technophile</span> Tech Stack</h2>
+                <p>To meet the elevating demands of the market we analyze your business requirements using the tech-suite accordingly!</p>
+            </div>
+            <div class="tech-tabs reveal">
+                <button class="tech-tab active" data-tab="mobile">Mobile Development</button>
+                <button class="tech-tab" data-tab="frontend">Front-End</button>
+                <button class="tech-tab" data-tab="backend">Back-End</button>
+                <button class="tech-tab" data-tab="database">Database</button>
+                <button class="tech-tab" data-tab="cloud">Cloud & DevOps</button>
+            </div>
+            <div class="tech-content">
+                <div class="tech-grid active" data-content="mobile">
+                    <div class="tech-item"><i class="fab fa-swift"></i><span>Swift</span></div>
+                    <div class="tech-item"><i class="fab fa-android"></i><span>Kotlin</span></div>
+                    <div class="tech-item"><i class="fas fa-code"></i><span>Objective-C</span></div>
+                    <div class="tech-item"><i class="fas fa-feather-alt"></i><span>Flutter</span></div>
+                    <div class="tech-item"><i class="fab fa-react"></i><span>React Native</span></div>
+                    <div class="tech-item"><i class="fas fa-atom"></i><span>Ionic</span></div>
+                </div>
+                <div class="tech-grid" data-content="frontend">
+                    <div class="tech-item"><i class="fab fa-angular"></i><span>Angular</span></div>
+                    <div class="tech-item"><i class="fab fa-react"></i><span>React JS</span></div>
+                    <div class="tech-item"><i class="fab fa-vuejs"></i><span>Vue.js</span></div>
+                    <div class="tech-item"><i class="fab fa-html5"></i><span>HTML5</span></div>
+                    <div class="tech-item"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+                    <div class="tech-item"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+                </div>
+                <div class="tech-grid" data-content="backend">
+                    <div class="tech-item"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+                    <div class="tech-item"><i class="fab fa-python"></i><span>Python</span></div>
+                    <div class="tech-item"><i class="fab fa-php"></i><span>PHP</span></div>
+                    <div class="tech-item"><i class="fab fa-java"></i><span>Java</span></div>
+                    <div class="tech-item"><i class="fas fa-code"></i><span>TypeScript</span></div>
+                    <div class="tech-item"><i class="fas fa-database"></i><span>.NET</span></div>
+                </div>
+                <div class="tech-grid" data-content="database">
+                    <div class="tech-item"><i class="fas fa-database"></i><span>MySQL</span></div>
+                    <div class="tech-item"><i class="fas fa-leaf"></i><span>MongoDB</span></div>
+                    <div class="tech-item"><i class="fas fa-database"></i><span>PostgreSQL</span></div>
+                    <div class="tech-item"><i class="fas fa-fire"></i><span>Firebase</span></div>
+                    <div class="tech-item"><i class="fas fa-server"></i><span>Redis</span></div>
+                    <div class="tech-item"><i class="fas fa-database"></i><span>DynamoDB</span></div>
+                </div>
+                <div class="tech-grid" data-content="cloud">
+                    <div class="tech-item"><i class="fab fa-aws"></i><span>AWS</span></div>
+                    <div class="tech-item"><i class="fab fa-google"></i><span>Google Cloud</span></div>
+                    <div class="tech-item"><i class="fab fa-microsoft"></i><span>Azure</span></div>
+                    <div class="tech-item"><i class="fab fa-docker"></i><span>Docker</span></div>
+                    <div class="tech-item"><i class="fas fa-dharmachakra"></i><span>Kubernetes</span></div>
+                    <div class="tech-item"><i class="fab fa-jenkins"></i><span>CI/CD</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== WHY CHOOSE US SECTION ====== -->
+    <section id="why-us" class="why-us-section">
+        <div class="container">
+            <div class="why-us-grid">
+                <div class="why-us-image reveal">
+                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&h=500&fit=crop" alt="Why choose Unify Technologies" loading="lazy">
+                    <div class="image-accent"></div>
+                </div>
+                <div class="why-us-content reveal">
+                    <div class="section-header section-header-left">
+                        <span class="sub-heading">Why Choose Us?</span>
+                        <h2>Why Choose Our<br><span class="gradient-text">IT Service?</span></h2>
+                    </div>
+                    <p>Choosing the right Tech Partner is crucial for the success of your Digital Solution. Here are some reasons why you should partner with Unify Tech:</p>
+                    <div class="advantages-list">
+                        <div class="advantage-item">
+                            <span class="adv-icon"><i class="fas fa-check"></i></span>
+                            <span>Experienced team of developers and designers</span>
+                        </div>
+                        <div class="advantage-item">
+                            <span class="adv-icon"><i class="fas fa-check"></i></span>
+                            <span>Customized solutions tailored to your specific needs</span>
+                        </div>
+                        <div class="advantage-item">
+                            <span class="adv-icon"><i class="fas fa-check"></i></span>
+                            <span>Strict adherence to deadlines and budgets</span>
+                        </div>
+                        <div class="advantage-item">
+                            <span class="adv-icon"><i class="fas fa-check"></i></span>
+                            <span>Competitive Pricing</span>
+                        </div>
+                        <div class="advantage-item">
+                            <span class="adv-icon"><i class="fas fa-check"></i></span>
+                            <span>Proven track record of delivering high-quality solutions</span>
+                        </div>
+                        <div class="advantage-item">
+                            <span class="adv-icon"><i class="fas fa-check"></i></span>
+                            <span>Latest Technology Integrations</span>
+                        </div>
+                        <div class="advantage-item">
+                            <span class="adv-icon"><i class="fas fa-check"></i></span>
+                            <span>Round-the-Clock Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== INDUSTRIES SECTION ====== -->
+    <section id="industries" class="industries-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="sub-heading">Industries We Serve</span>
+                <h2>With Your Vision and Our Innovation We Cater for<br><span class="gradient-text">Diverse Business Niches!</span></h2>
+            </div>
+            <div class="industries-grid">
+                <div class="industry-card reveal">
+                    <div class="industry-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h4>On Demand App Development</h4>
+                </div>
+                <div class="industry-card reveal">
+                    <div class="industry-icon"><i class="fas fa-heartbeat"></i></div>
+                    <h4>Healthcare &amp; Hospital Management</h4>
+                </div>
+                <div class="industry-card reveal">
+                    <div class="industry-icon"><i class="fas fa-heart"></i></div>
+                    <h4>Dating App Development</h4>
+                </div>
+                <div class="industry-card reveal">
+                    <div class="industry-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h4>Custom Software Development</h4>
+                </div>
+                <div class="industry-card reveal">
+                    <div class="industry-icon"><i class="fas fa-dumbbell"></i></div>
+                    <h4>Health &amp; Fitness</h4>
+                </div>
+                <div class="industry-card reveal">
+                    <div class="industry-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <h4>E-Commerce</h4>
+                </div>
+                <div class="industry-card reveal">
+                    <div class="industry-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h4>Education</h4>
+                </div>
+                <div class="industry-card reveal">
+                    <div class="industry-icon"><i class="fas fa-truck"></i></div>
+                    <h4>Travel &amp; Logistics</h4>
+                </div>
+                <div class="industry-card reveal">
+                    <div class="industry-icon"><i class="fas fa-utensils"></i></div>
+                    <h4>Food &amp; Grocery</h4>
+                </div>
+                <div class="industry-card reveal">
+                    <div class="industry-icon"><i class="fas fa-share-alt"></i></div>
+                    <h4>Social Media</h4>
+                </div>
+                <div class="industry-card reveal">
+                    <div class="industry-icon"><i class="fas fa-money-bill-wave"></i></div>
+                    <h4>Finance</h4>
+                </div>
+                <div class="industry-card reveal">
+                    <div class="industry-icon"><i class="fas fa-gamepad"></i></div>
+                    <h4>Entertainment</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== STATS SECTION ====== -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-box reveal">
+                    <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                    <span class="stat-count" data-target="150">0</span>
+                    <span class="stat-plus">+</span>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-box reveal">
+                    <div class="stat-icon"><i class="fas fa-smile"></i></div>
+                    <span class="stat-count" data-target="50">0</span>
+                    <span class="stat-plus">+</span>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-box reveal">
+                    <div class="stat-icon"><i class="fas fa-users"></i></div>
+                    <span class="stat-count" data-target="30">0</span>
+                    <span class="stat-plus">+</span>
+                    <p>Team Members</p>
+                </div>
+                <div class="stat-box reveal">
+                    <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+                    <span class="stat-count" data-target="15">0</span>
+                    <span class="stat-plus">+</span>
+                    <p>Awards Won</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== TESTIMONIALS SECTION ====== -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="sub-heading">Testimonials</span>
+                <h2>Client's Satisfaction is<br>Our <span class="gradient-text">Destination</span></h2>
+            </div>
+            <div class="testimonial-slider" id="testimonialSlider">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Michael Hemsworth" loading="lazy">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Michael Hemsworth</h4>
+                                <span>Restaurant Owner</span>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>"I partnered with Unify Technologies to get a mobile app developed for my restaurant. The company delivered me exactly what was demonstrated and in fact better than the prototypes. Highly satisfied!"</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face" alt="Lathen Jones" loading="lazy">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Lathen Jones</h4>
+                                <span>Fitness Entrepreneur</span>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>"Unify Tech built an intuitive application for my fitness venture. They included every technological integration that I demanded. I look forward to getting more services from them."</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="Grayson Saverio" loading="lazy">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Grayson Saverio</h4>
+                                <span>Tech Startup CEO</span>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>"Unify Technologies has shown commendable dedication to my project. They were available for follow-ups and kept me in the loop throughout my journey. Their digital marketing services are great!"</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" alt="Sarah Mitchell" loading="lazy">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Sarah Mitchell</h4>
+                                <span>E-commerce Director</span>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>"The team at Unify Tech transformed our entire e-commerce platform. Sales increased by 40% within the first quarter after launch. Absolutely phenomenal work and support!"</p>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-arrow slider-prev" id="sliderPrev" aria-label="Previous testimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="slider-dots" id="sliderDots"></div>
+                    <button class="slider-arrow slider-next" id="sliderNext" aria-label="Next testimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== NEWSLETTER SECTION ====== -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-wrapper">
+                <div class="newsletter-content reveal">
+                    <span class="sub-heading">Newsletter</span>
+                    <h2>Subscribe to Receive the <span class="gradient-text">Latest News</span></h2>
+                </div>
+                <div class="newsletter-form reveal">
+                    <form id="newsletterForm">
+                        <input type="email" class="newsletter-input" placeholder="Enter your email address" required id="newsletter-email">
+                        <button type="submit" class="btn-primary" id="newsletter-submit">
+                            <span>Subscribe</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== CONTACT INFO SECTION ====== -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="sub-heading">Get In Touch</span>
+                <h2>Ready to Start Your <span class="gradient-text">Digital Journey?</span></h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card reveal">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Free Consultation</h3>
+                    <p>Schedule a Free Consultation With Our Specialist</p>
+                    <a href="tel:+12165032302" class="btn-primary btn-small" id="contact-schedule">
+                        <span>Schedule Now</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="contact-card reveal">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Send a Request</h3>
+                    <p>Begin Your Adventure With Experienced Professionals</p>
+                    <a href="mailto:info@unifytechsolutions.com" class="btn-primary btn-small" id="contact-request">
+                        <span>Send Request</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="contact-card reveal">
+                    <div class="contact-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Help Desk</h3>
+                    <p>Do You Have Questions or Want More Information?</p>
+                    <div class="contact-phone">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+12165032302">+1 (216) 503 2302</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-icon">U</span>
+                        <span class="logo-text">Unify<span class="logo-accent">Tech</span></span>
+                    </a>
+                    <p>Unify-Tech is a tech-savvy, robust and cutting-edge company that empowers businesses with the touch of a Digital Landscape.</p>
+                    <div class="footer-contact-info">
+                        <p><i class="fas fa-envelope"></i> info@unifytechsolutions.com</p>
+                        <p><i class="fas fa-phone"></i> +1 (216) 503 2302</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Plot 10, World Tech Tower, Sector 67, Mohali</p>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="web-development.html">Web Development</a></li>
+                        <li><a href="mobile-app-solutions.html">Mobile App Solutions</a></li>
+                        <li><a href="ui-ux-design.html">UI/UX Design</a></li>
+                        <li><a href="custom-software-development.html">Custom Software</a></li>
+                        <li><a href="fin-tech-development.html">FinTech Solutions</a></li>
+                        <li><a href="iot-development.html">IoT Development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="index.html#industries">Industries</a></li>
+                        <li><a href="contact.html">Career</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <p>Stay connected with us on social media for the latest updates.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/profile.php?id=100092164787200" target="_blank" aria-label="Facebook" id="social-facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/unifytechnologies/" target="_blank" aria-label="Instagram" id="social-instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter" id="social-twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn" id="social-linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Copyright &copy; <span id="copyright-year"></span> Unify Tech, All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ====== BACK TO TOP ====== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ====== JAVASCRIPT ====== -->
+    <script src="script.js"></script>
+</body>
+</html>
