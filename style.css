@@ -52,11 +52,7 @@ body {
     letter-spacing: 0.02em;
     -webkit-font-smoothing: antialiased;
     
-    /* Subtle linen/paper texture */
-    background-image: 
-        linear-gradient(90deg, rgba(0, 99, 179, 0.02) 1px, transparent 1px),
-        linear-gradient(rgba(0, 99, 179, 0.02) 1px, transparent 1px);
-    background-size: 24px 24px;
+    /* Clean background - no grid lines */
 }
 
 body.menu-open {
@@ -1929,10 +1925,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Dark mode color overrides */
 [data-theme="dark"] {
-    --bg-dark: #0d1117;
-    --bg-darker: #0a0e14;
-    --bg-card: rgba(22, 27, 34, 0.85);
-    --bg-card-hover: rgba(30, 37, 48, 0.9);
+    --bg-dark: #000000;
+    --bg-darker: #000000;
+    --bg-card: rgba(12, 12, 12, 0.92);
+    --bg-card-hover: rgba(20, 20, 20, 0.95);
 
     --primary-accent: #8b9dc3;
     --secondary-accent: #4a9ede;
@@ -1941,7 +1937,7 @@ h1, h2, h3, h4, h5, h6 {
 
     --text-main: #e6edf3;
     --text-muted: #8b949e;
-    --border-color: rgba(255, 255, 255, 0.1);
+    --border-color: rgba(255, 255, 255, 0.08);
     --border-hover: rgba(74, 158, 222, 0.4);
 }
 
@@ -1950,9 +1946,6 @@ h1, h2, h3, h4, h5, h6 {
 body[data-theme="dark"] {
     background-color: var(--bg-dark);
     color: var(--text-main);
-    background-image:
-        linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px),
-        linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px);
 }
 
 /* Preloader */
@@ -1962,13 +1955,13 @@ body[data-theme="dark"] {
 
 /* Navbar */
 [data-theme="dark"] .navbar.scrolled {
-    background: rgba(13, 17, 23, 0.94);
+    background: rgba(0, 0, 0, 0.96);
     border-bottom: 1px solid var(--border-color);
 }
 
 /* Dropdown menu */
 [data-theme="dark"] .dropdown-menu {
-    background: rgba(22, 27, 34, 0.98);
+    background: rgba(10, 10, 10, 0.98);
     border: 1px solid var(--border-color);
 }
 
@@ -1978,44 +1971,38 @@ body[data-theme="dark"] {
 
 /* Mobile nav panel */
 [data-theme="dark"] .nav-links {
-    background: rgba(13, 17, 23, 0.98);
+    background: rgba(0, 0, 0, 0.98);
     border-left: 1px solid var(--border-color);
 }
 
 /* Hero section */
 [data-theme="dark"] .hero-section {
     background:
-        radial-gradient(circle at 80% 20%, rgba(0, 99, 179, 0.08), transparent 45%),
-        radial-gradient(circle at 10% 80%, rgba(26, 26, 46, 0.06), transparent 40%),
-        linear-gradient(135deg, #0d1117 0%, #0a0e14 100%);
+        radial-gradient(circle at 80% 20%, rgba(0, 99, 179, 0.12), transparent 45%),
+        radial-gradient(circle at 10% 80%, rgba(74, 158, 222, 0.08), transparent 40%),
+        linear-gradient(135deg, #000000 0%, #050505 100%);
 }
 
 [data-theme="dark"] .hero-section::before {
-    background: repeating-linear-gradient(
-        -35deg,
-        rgba(255, 255, 255, 0.04) 0px,
-        rgba(255, 255, 255, 0.04) 80px,
-        transparent 80px,
-        transparent 200px
-    );
+    background: none;
 }
 
 /* Hero tag badge */
 [data-theme="dark"] .hero-tag {
-    background: rgba(22, 27, 34, 0.7);
+    background: rgba(10, 10, 10, 0.7);
     border: 1px solid var(--border-color);
 }
 
 /* Floating badges */
 [data-theme="dark"] .floating-badge {
-    background: rgba(22, 27, 34, 0.8);
+    background: rgba(10, 10, 10, 0.8);
     border: 1px solid var(--border-color);
     color: var(--text-main);
 }
 
 /* Hero stats bar */
 [data-theme="dark"] .hero-stats {
-    background: rgba(22, 27, 34, 0.6);
+    background: rgba(10, 10, 10, 0.7);
     border: 1px solid var(--border-color);
 }
 
@@ -2049,7 +2036,7 @@ body[data-theme="dark"] {
 
 /* Process steps */
 [data-theme="dark"] .step-number {
-    background: rgba(22, 27, 34, 0.8);
+    background: rgba(10, 10, 10, 0.8);
     border: 1px solid var(--border-color);
 }
 
@@ -2062,7 +2049,7 @@ body[data-theme="dark"] {
 /* Tech tabs */
 [data-theme="dark"] .tech-tab {
     border: 1px solid var(--border-color);
-    background: rgba(22, 27, 34, 0.6);
+    background: rgba(10, 10, 10, 0.6);
     color: var(--text-muted);
 }
 
@@ -2111,14 +2098,14 @@ body[data-theme="dark"] {
 /* Slider arrows */
 [data-theme="dark"] .slider-arrow {
     border: 1px solid var(--border-color);
-    background: rgba(22, 27, 34, 0.6);
+    background: rgba(10, 10, 10, 0.7);
     color: var(--text-muted);
 }
 
 [data-theme="dark"] .slider-arrow:hover {
     border-color: var(--primary-accent);
     color: var(--primary-accent);
-    background: rgba(30, 37, 48, 0.8);
+    background: rgba(20, 20, 20, 0.9);
 }
 
 /* Dots */
@@ -2137,7 +2124,7 @@ body[data-theme="dark"] {
 }
 
 [data-theme="dark"] .newsletter-input {
-    background: rgba(22, 27, 34, 0.7);
+    background: rgba(10, 10, 10, 0.8);
     border: 1px solid var(--border-color);
     color: var(--text-main);
 }
@@ -2168,7 +2155,7 @@ body[data-theme="dark"] {
 
 [data-theme="dark"] .footer-social a {
     border: 1px solid var(--border-color);
-    background: rgba(22, 27, 34, 0.5);
+    background: rgba(10, 10, 10, 0.5);
     color: var(--text-muted);
 }
 
@@ -2202,11 +2189,11 @@ body[data-theme="dark"] {
 
 /* Custom scrollbar in dark mode */
 [data-theme="dark"] ::-webkit-scrollbar-track {
-    background: #0d1117;
+    background: #000000;
 }
 
 [data-theme="dark"] ::-webkit-scrollbar-thumb {
-    background: #30363d;
+    background: #1a1a1a;
 }
 
 [data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
@@ -2221,6 +2208,14 @@ body[data-theme="dark"] {
 /* Image brightness in dark mode */
 [data-theme="dark"] img {
     filter: brightness(0.85);
+}
+
+/* Logo stays bright and vivid in dark mode */
+[data-theme="dark"] .nav-logo img,
+[data-theme="dark"] .footer-logo img,
+[data-theme="dark"] .preloader img,
+[data-theme="dark"] .preloader-inner img {
+    filter: none;
 }
 
 /* Smooth transition for dark mode switch */
