@@ -19,16 +19,17 @@
             min-height: 80vh;
         }
         .details-wrapper h2.sotcox-title {
+            font-family: var(--font-serif);
             font-size: 2rem;
-            font-weight: 800;
-            color: #fff;
+            font-weight: 500;
+            color: var(--text-main);
             margin-top: 40px;
             margin-bottom: 20px;
         }
         .details-wrapper p {
             color: var(--text-muted);
             margin-bottom: 24px;
-            line-height: 1.7;
+            line-height: 1.85; /* Airy line-height */
         }
         .details-wrapper ul.blog-list-item {
             margin: 24px 0;
@@ -41,7 +42,7 @@
             align-items: center;
             gap: 12px;
             font-weight: 600;
-            color: #fff;
+            color: var(--text-main);
         }
         .details-wrapper ul.blog-list-item li img {
             width: 16px;
@@ -55,24 +56,29 @@
             font-style: italic;
         }
         .sotcox-btn {
-            background: linear-gradient(135deg, var(--primary-accent), var(--secondary-accent));
+            background: var(--secondary-accent);
             padding: 14px 28px;
             border-radius: 30px;
-            font-weight: 700;
+            font-weight: 600;
             color: #fff;
             display: inline-flex;
             align-items: center;
-            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.25);
-            margin: 20px 0;
+            transition: var(--transition-normal);
         }
         .sotcox-btn:hover {
-            box-shadow: 0 8px 30px var(--accent-glow);
+            background: #af4d27;
             transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(200, 90, 50, 0.2);
         }
         .details-thumb img {
             border-radius: 16px;
             border: 1px solid var(--border-color);
             margin: 30px 0;
+        }
+        .sidebar-wrapper h3 {
+            font-family: var(--font-serif);
+            font-weight: 500;
+            color: var(--text-main);
         }
     </style>
 </head>
@@ -85,9 +91,7 @@
     <!-- ====== PRELOADER ====== -->
     <div class="preloader" id="preloader">
         <div class="preloader-inner">
-            <div class="preloader-logo">U</div>
-            <div class="preloader-text">UNIFY TECH</div>
-            <div class="preloader-bar">
+            <img class = "image" height="200" width="300"  src="logo.png">
                 <div class="preloader-progress"></div>
             </div>
         </div>
@@ -97,8 +101,7 @@
     <nav class="navbar scrolled" id="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo" id="nav-logo">
-                <span class="logo-icon">U</span>
-                <span class="logo-text">Unify<span class="logo-accent">Tech</span></span>
+                 <img class = "image" height="100px" width="140px" src="logo.png">
             </a>
 
             <ul class="nav-links" id="navLinks">
@@ -148,56 +151,106 @@
         <div class="container">
             <div class="about-grid" style="grid-template-columns: 1.3fr 0.7fr; align-items: start;">
                 <div class="details-wrapper reveal">
-                    <div class="details-content">
-                            <h2 class="sotcox-title mb-15">Holistic Healthcare App Development Services</h2>
-
-                            <p>Make the process in healthcare convenient for your patients in every possible way with advanced software development services</p>
-
-                            <p>At Unify Tech, we specialize in providing cutting-edge solutions for the healthcare industry. With our expertise and advanced technology, we help healthcare organizations optimize their operations, improve patient care, and drive better outcomes. Our comprehensive range of services includes</p>
-
-                            <div class="details-thumb mb-15">
-                                <img src="assets/img/services/healthcare.jpg" alt="img">
-                            </div>
-
-
-                            <p><b>Electronic Health Records (EHR):</b> We offer robust EHR systems that streamline patient information management, enhance data accuracy, and enable secure and efficient access to medical records.</p>
-
-                            <p><b>Telehealth Solutions:</b> Our telehealth platforms enable virtual consultations, remote monitoring, and patient engagement, expanding access to healthcare services and improving patient convenience and satisfaction.</p>
-
-                            <p><b>Health Information Exchange (HIE):</b> We facilitate seamless and secure exchange of patient data across healthcare providers, ensuring continuity of care and fostering collaboration among different healthcare entities.</p>
-
-                            <p><b>Medical Billing and Revenue Cycle Management:</b> Our solutions automate billing processes, optimize revenue cycles, and improve financial performance for healthcare organizations, reducing administrative burdens and maximizing reimbursements.</p>
-
-                            <p><b>Data Analytics and Insights:</b> We leverage data analytics to extract meaningful insights from healthcare data, enabling organizations to make informed decisions, identify trends, and improve clinical and operational outcomes.</p>
-
-                            <p><b>Compliance and Security:</b> We prioritize compliance with healthcare regulations and implement robust security measures to safeguard patient data and protect against data breaches.</p>
-
-                            <p><b>Mobile Applications and Patient Portals:</b> We develop user-friendly mobile applications and patient portals that empower patients to actively participate in their healthcare journey, access medical information, schedule appointments, and engage with healthcare providers.</p>
-
-                            <p><b>Health IT Consulting:</b> Our experienced consultants provide strategic guidance and expertise in implementing health IT solutions, ensuring seamless integration, workflow optimization, and successful digital transformation.</p>
-
-                            <p>Partner with Unify Tech to leverage our industry-leading solutions and transform your healthcare organization into a more efficient, patient-centered, and technologically advanced enterprise."</p>
-
-                            <p>Feel free to customize this description based on your specific services and target audience within the healthcare industry.</p>
-
-                            <h3 class="mt-50 mb-25">Seamless Healthcare App Development Catering Every Industry Need  </h3>
-                            <p>Minimizing the gap between quality healthcare and innovation with the latest technologies </p>
-                            <ul class="list-unstyled blog-list-item">
-                                
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    iOS App Development
-                                </li>
-                                <li>
-                                    <img src="assets/img/icons/star.png" alt="">
-                                    Android App Development 
-                                </li>
-                                
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Hybrid-Native App Development 
-                                </li>
-                            </ul>
-
-                        
+                    <div class="details-content">
+
+                            <h2 class="sotcox-title mb-15">Holistic Healthcare App Development Services</h2>
+
+
+
+                            <p>Make the process in healthcare convenient for your patients in every possible way with advanced software development services</p>
+
+
+
+                            <p>At Unify Tech, we specialize in providing cutting-edge solutions for the healthcare industry. With our expertise and advanced technology, we help healthcare organizations optimize their operations, improve patient care, and drive better outcomes. Our comprehensive range of services includes</p>
+
+
+
+                            <div class="details-thumb mb-15">
+
+                                <img src="assets/img/services/healthcare.jpg" alt="img">
+
+                            </div>
+
+
+
+
+
+                            <p><b>Electronic Health Records (EHR):</b> We offer robust EHR systems that streamline patient information management, enhance data accuracy, and enable secure and efficient access to medical records.</p>
+
+
+
+                            <p><b>Telehealth Solutions:</b> Our telehealth platforms enable virtual consultations, remote monitoring, and patient engagement, expanding access to healthcare services and improving patient convenience and satisfaction.</p>
+
+
+
+                            <p><b>Health Information Exchange (HIE):</b> We facilitate seamless and secure exchange of patient data across healthcare providers, ensuring continuity of care and fostering collaboration among different healthcare entities.</p>
+
+
+
+                            <p><b>Medical Billing and Revenue Cycle Management:</b> Our solutions automate billing processes, optimize revenue cycles, and improve financial performance for healthcare organizations, reducing administrative burdens and maximizing reimbursements.</p>
+
+
+
+                            <p><b>Data Analytics and Insights:</b> We leverage data analytics to extract meaningful insights from healthcare data, enabling organizations to make informed decisions, identify trends, and improve clinical and operational outcomes.</p>
+
+
+
+                            <p><b>Compliance and Security:</b> We prioritize compliance with healthcare regulations and implement robust security measures to safeguard patient data and protect against data breaches.</p>
+
+
+
+                            <p><b>Mobile Applications and Patient Portals:</b> We develop user-friendly mobile applications and patient portals that empower patients to actively participate in their healthcare journey, access medical information, schedule appointments, and engage with healthcare providers.</p>
+
+
+
+                            <p><b>Health IT Consulting:</b> Our experienced consultants provide strategic guidance and expertise in implementing health IT solutions, ensuring seamless integration, workflow optimization, and successful digital transformation.</p>
+
+
+
+                            <p>Partner with Unify Tech to leverage our industry-leading solutions and transform your healthcare organization into a more efficient, patient-centered, and technologically advanced enterprise."</p>
+
+
+
+                            <p>Feel free to customize this description based on your specific services and target audience within the healthcare industry.</p>
+
+
+
+                            <h3 class="mt-50 mb-25">Seamless Healthcare App Development Catering Every Industry Need  </h3>
+
+                            <p>Minimizing the gap between quality healthcare and innovation with the latest technologies </p>
+
+                            <ul class="list-unstyled blog-list-item">
+
+                                
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    iOS App Development
+
+                                </li>
+
+                                <li>
+
+                                    <img src="assets/img/icons/star.png" alt="">
+
+                                    Android App Development 
+
+                                </li>
+
+                                
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Hybrid-Native App Development 
+
+                                </li>
+
+                            </ul>
+
+
+
+                        
+
                         </div>
                 </div>
                 <div class="sidebar-wrapper reveal" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 24px; padding: 30px; position: sticky; top: 100px;">

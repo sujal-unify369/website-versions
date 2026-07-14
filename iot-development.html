@@ -19,16 +19,17 @@
             min-height: 80vh;
         }
         .details-wrapper h2.sotcox-title {
+            font-family: var(--font-serif);
             font-size: 2rem;
-            font-weight: 800;
-            color: #fff;
+            font-weight: 500;
+            color: var(--text-main);
             margin-top: 40px;
             margin-bottom: 20px;
         }
         .details-wrapper p {
             color: var(--text-muted);
             margin-bottom: 24px;
-            line-height: 1.7;
+            line-height: 1.85; /* Airy line-height */
         }
         .details-wrapper ul.blog-list-item {
             margin: 24px 0;
@@ -41,7 +42,7 @@
             align-items: center;
             gap: 12px;
             font-weight: 600;
-            color: #fff;
+            color: var(--text-main);
         }
         .details-wrapper ul.blog-list-item li img {
             width: 16px;
@@ -55,24 +56,29 @@
             font-style: italic;
         }
         .sotcox-btn {
-            background: linear-gradient(135deg, var(--primary-accent), var(--secondary-accent));
+            background: var(--secondary-accent);
             padding: 14px 28px;
             border-radius: 30px;
-            font-weight: 700;
+            font-weight: 600;
             color: #fff;
             display: inline-flex;
             align-items: center;
-            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.25);
-            margin: 20px 0;
+            transition: var(--transition-normal);
         }
         .sotcox-btn:hover {
-            box-shadow: 0 8px 30px var(--accent-glow);
+            background: #af4d27;
             transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(200, 90, 50, 0.2);
         }
         .details-thumb img {
             border-radius: 16px;
             border: 1px solid var(--border-color);
             margin: 30px 0;
+        }
+        .sidebar-wrapper h3 {
+            font-family: var(--font-serif);
+            font-weight: 500;
+            color: var(--text-main);
         }
     </style>
 </head>
@@ -85,9 +91,7 @@
     <!-- ====== PRELOADER ====== -->
     <div class="preloader" id="preloader">
         <div class="preloader-inner">
-            <div class="preloader-logo">U</div>
-            <div class="preloader-text">UNIFY TECH</div>
-            <div class="preloader-bar">
+            <img class = "image" height="200" width="300"  src="logo.png">
                 <div class="preloader-progress"></div>
             </div>
         </div>
@@ -97,8 +101,7 @@
     <nav class="navbar scrolled" id="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo" id="nav-logo">
-                <span class="logo-icon">U</span>
-                <span class="logo-text">Unify<span class="logo-accent">Tech</span></span>
+                 <img class = "image" height="100px" width="140px" src="logo.png">
             </a>
 
             <ul class="nav-links" id="navLinks">
@@ -148,88 +151,170 @@
         <div class="container">
             <div class="about-grid" style="grid-template-columns: 1.3fr 0.7fr; align-items: start;">
                 <div class="details-wrapper reveal">
-                    <div class="details-content">
-                            <h2 class="sotcox-title mb-15">Innovative IoT Development Services  </h2>
-
-                            <h5 class="mb-25">Transforming enterprises with knowledgeable IoT software development services that encourage smooth integration and unrestricted creativity</h5>
-
-
-                            <div class="details-thumb">
-                                <img src="assets/img/banner/iot-sub.png" alt="img">
-                            </div>
-
-                          
-                            <h3 class="mt-20 mb-25">Improve Your Business Acumen with Our Premium IoT Development Services </h3>
-                            <p>Our custom IoT application development services work with industries ranging from healthcare and finance to retail and real estate to create better brands with smarter solutions.</p>
-                                     
-                            <ul class="list-unstyled">
-                                <li>
-                                    
-                                  <b>  IoT Consulting</b>- With the help of our knowledgeable IoT consultants, we guarantee that you will receive competent and sensible guidance on realizing the potential of the IoT ecosystem. 
-                                </li>
-                                <li>
-                               <b> IoT App Development</b>- Being a fantastic and industry-leading IoT app development firm, we use the newest tools and methods to give you mobile IoT software solutions that work for your company. 
-                                </li>
-                                <li>
-                               <b> IoT Testing and Maintenance</b>- To deliver bug-free IoT software development services, we make use of the best quality assurance tools and techniques. We also provide premium support and maintenance services. 
-                                </li>
-                                <li>
-                               <b> AIoT</b>- Our development services streamline procedures and improve operational efficiency for enterprises by utilizing AI/ML and IoT. We analyze data intelligently, facilitating quick & efficient business decision-making. 
-                                </li>
-
-                            </ul>
-
-                            <br>
-                          
-
-                            <h3 class="mt-20 mb-10">Our Solutions and Services for IoT Application Development caters various Industries </h3>
-                            <p class="mt-15 mb-25">Our Internet of Things developers have helped companies in a variety of industries increase their productivity and efficiency throughout the years. </p>
-
-                            <ul class="list-unstyled blog-list-item">
-                                <li>
-                                    <img src="assets/img/icons/star.png" alt="">
-                                    Healthcare  
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Manufacturing 
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Retail and eCommerce
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Finance 
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Logistics and Supply Chain  
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Agriculture
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Automotive 
-                                </li>
-                            </ul>
-                            <br>
-                           
-                            <h3 class="sotcox-title mt-50 mb-25">Why Should You Hire Unify Tech for IoT App Development? </h3>
-                            <p> As the top IoT application development firm, Unify Tech has established itself by developing user-focused apps for well-known businesses. As a leading IoT software development firm, we concentrate on integrating the digital and physical worlds and offering our clients the most cutting-edge and practical IoT environments.</p>
-
-                            <ul class="list-unstyled blog-list-item">
-                                <li>
-                                    <img src="assets/img/icons/star.png" alt="">
-                                    Agile Security Practices 
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Robust Connectivity  
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Putting Usability Key 
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Reliability  
-                                </li>
-                            </ul>
-                            
+                    <div class="details-content">
+
+                            <h2 class="sotcox-title mb-15">Innovative IoT Development Services  </h2>
+
+
+
+                            <h5 class="mb-25">Transforming enterprises with knowledgeable IoT software development services that encourage smooth integration and unrestricted creativity</h5>
+
+
+
+
+
+                            <div class="details-thumb">
+
+                                <img src="assets/img/banner/iot-sub.png" alt="img">
+
+                            </div>
+
+
+
+                          
+
+                            <h3 class="mt-20 mb-25">Improve Your Business Acumen with Our Premium IoT Development Services </h3>
+
+                            <p>Our custom IoT application development services work with industries ranging from healthcare and finance to retail and real estate to create better brands with smarter solutions.</p>
+
+                                     
+
+                            <ul class="list-unstyled">
+
+                                <li>
+
+                                    
+
+                                  <b>  IoT Consulting</b>- With the help of our knowledgeable IoT consultants, we guarantee that you will receive competent and sensible guidance on realizing the potential of the IoT ecosystem. 
+
+                                </li>
+
+                                <li>
+
+                               <b> IoT App Development</b>- Being a fantastic and industry-leading IoT app development firm, we use the newest tools and methods to give you mobile IoT software solutions that work for your company. 
+
+                                </li>
+
+                                <li>
+
+                               <b> IoT Testing and Maintenance</b>- To deliver bug-free IoT software development services, we make use of the best quality assurance tools and techniques. We also provide premium support and maintenance services. 
+
+                                </li>
+
+                                <li>
+
+                               <b> AIoT</b>- Our development services streamline procedures and improve operational efficiency for enterprises by utilizing AI/ML and IoT. We analyze data intelligently, facilitating quick & efficient business decision-making. 
+
+                                </li>
+
+
+
+                            </ul>
+
+
+
+                            <br>
+
+                          
+
+
+
+                            <h3 class="mt-20 mb-10">Our Solutions and Services for IoT Application Development caters various Industries </h3>
+
+                            <p class="mt-15 mb-25">Our Internet of Things developers have helped companies in a variety of industries increase their productivity and efficiency throughout the years. </p>
+
+
+
+                            <ul class="list-unstyled blog-list-item">
+
+                                <li>
+
+                                    <img src="assets/img/icons/star.png" alt="">
+
+                                    Healthcare  
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Manufacturing 
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Retail and eCommerce
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Finance 
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Logistics and Supply Chain  
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Agriculture
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Automotive 
+
+                                </li>
+
+                            </ul>
+
+                            <br>
+
+                           
+
+                            <h3 class="sotcox-title mt-50 mb-25">Why Should You Hire Unify Tech for IoT App Development? </h3>
+
+                            <p> As the top IoT application development firm, Unify Tech has established itself by developing user-focused apps for well-known businesses. As a leading IoT software development firm, we concentrate on integrating the digital and physical worlds and offering our clients the most cutting-edge and practical IoT environments.</p>
+
+
+
+                            <ul class="list-unstyled blog-list-item">
+
+                                <li>
+
+                                    <img src="assets/img/icons/star.png" alt="">
+
+                                    Agile Security Practices 
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Robust Connectivity  
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Putting Usability Key 
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Reliability  
+
+                                </li>
+
+                            </ul>
+
+                            
+
                         </div>
                 </div>
                 <div class="sidebar-wrapper reveal" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 24px; padding: 30px; position: sticky; top: 100px;">

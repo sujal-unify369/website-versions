@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unify Technologies - Software and Web Development Company</title>
+    <logo>
+        <img class = "image" height="200" width="300"  src="logo.png">
+    </logo>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,16 +22,17 @@
             min-height: 80vh;
         }
         .details-wrapper h2.sotcox-title {
+            font-family: var(--font-serif);
             font-size: 2rem;
-            font-weight: 800;
-            color: #fff;
+            font-weight: 500;
+            color: var(--text-main);
             margin-top: 40px;
             margin-bottom: 20px;
         }
         .details-wrapper p {
             color: var(--text-muted);
             margin-bottom: 24px;
-            line-height: 1.7;
+            line-height: 1.85; /* Airy line-height */
         }
         .details-wrapper ul.blog-list-item {
             margin: 24px 0;
@@ -41,7 +45,7 @@
             align-items: center;
             gap: 12px;
             font-weight: 600;
-            color: #fff;
+            color: var(--text-main);
         }
         .details-wrapper ul.blog-list-item li img {
             width: 16px;
@@ -55,24 +59,29 @@
             font-style: italic;
         }
         .sotcox-btn {
-            background: linear-gradient(135deg, var(--primary-accent), var(--secondary-accent));
+            background: var(--secondary-accent);
             padding: 14px 28px;
             border-radius: 30px;
-            font-weight: 700;
+            font-weight: 600;
             color: #fff;
             display: inline-flex;
             align-items: center;
-            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.25);
-            margin: 20px 0;
+            transition: var(--transition-normal);
         }
         .sotcox-btn:hover {
-            box-shadow: 0 8px 30px var(--accent-glow);
+            background: #af4d27;
             transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(200, 90, 50, 0.2);
         }
         .details-thumb img {
             border-radius: 16px;
             border: 1px solid var(--border-color);
             margin: 30px 0;
+        }
+        .sidebar-wrapper h3 {
+            font-family: var(--font-serif);
+            font-weight: 500;
+            color: var(--text-main);
         }
     </style>
 </head>
@@ -85,8 +94,7 @@
     <!-- ====== PRELOADER ====== -->
     <div class="preloader" id="preloader">
         <div class="preloader-inner">
-            <div class="preloader-logo">U</div>
-            <div class="preloader-text">UNIFY TECH</div>
+            <img class = "image" height="200" width="300"  src="logo.png">
             <div class="preloader-bar">
                 <div class="preloader-progress"></div>
             </div>
@@ -97,8 +105,7 @@
     <nav class="navbar scrolled" id="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo" id="nav-logo">
-                <span class="logo-icon">U</span>
-                <span class="logo-text">Unify<span class="logo-accent">Tech</span></span>
+                <img class = "image" height="100px" width="140px" src="logo.png">
             </a>
 
             <ul class="nav-links" id="navLinks">
@@ -148,113 +155,220 @@
         <div class="container">
             <div class="about-grid" style="grid-template-columns: 1.3fr 0.7fr; align-items: start;">
                 <div class="details-wrapper reveal">
-                    <div class="details-content">
-                        <h2 class="sotcox-title mb-25">Tap into the Hub of Exceptional Web Development Services </h2>
-                        <p>With an agile development process and the latest technological integrations, we build your tech savvy solutions. </p>
-
-                        <a href="contact.html">Get A Free Consultation <span></span></a>
-
-
-                        <h2 class="sotcox-title mt-85 mb-25"> We ensure Robust Backend Architecture for Seamless Outcome </h2>
-                        <p>Everything that a user cannot see is the backend of a website. Typically, this refers to the code that produces the "server-side" content of the website, or the pages that users view. This may include databases, scripts, instructions, and other automatic tasks the server carries out. The logical interaction of data, server implementation, and data storage and transmission are all included in back-end development.</p>
-                        <p>Programming languages including PHP, Python, Go, and more recent JavaScript libraries like Node are frequently used by our back-end developers. Mobile apps, desktop apps, and both desktop and mobile web front ends are all supported by web back ends. With the power of technology, we are the top web application development Company. </p>
-                        <h2 class="sotcox-title mt-85 mb-25"> Our Web Development Services Cater to Every Industry Need </h2>
-                        <p> With an agile development process and the latest technological integrations, we build your tech savvy solutions.</p>
-                        <ul class="list-unstyled blog-list-item">
-                            <li>
-                                <img src="assets/img/icons/star.png" alt="">
-                                Healthcare
-                            </li>
-                            <li>
-                                <img src="assets/img/icons/star.png" alt="">
-                                Fitness
-                            </li>
-                            <li>
-                                <img src="assets/img/icons/star.png" alt="">
-                                Education
-                            </li>
-                            <li>
-                                <img src="assets/img/icons/star.png" alt="">
-                                Game
-                            </li>
-                            <li>
-                                <img src="assets/img/icons/star.png" alt="">
-                                Taxi & Transportation
-                            </li>
-                            <li>
-                                <img src="assets/img/icons/star.png" alt="">
-                                Food
-                            </li>
-                            <li>
-                                <img src="assets/img/icons/star.png" alt="">
-                                Logistics
-                            </li>
-                            <li>
-                                <img src="assets/img/icons/star.png" alt="">
-                                Grocery
-                            </li>
-                            <li>
-                                <img src="assets/img/icons/star.png" alt="">
-                                Social Networking
-                            </li>
-                        </ul>
-                        <div class="details-thumb mt-30">
-                            <img src="assets/img/banner/web-2.png" alt="img">
-                        </div>
-                        <h2 class="sotcox-title mt-85 mb-25">Our Exquisite Web Development Services </h2>
-                        <p>Web Development Services at Unify Tech not only complies with every business but gives the right uplift that a venture needs the most.</p>
-                        <ul class="list-unstyled blog-list-item">
-
-                            <li><img src="assets/img/icons/star.png" alt="">
-                                Web Portal Development
-                            </li>
-                            <p>Customer-focused websites with all the features you need to grow your business online </p>
-                            <li><img src="assets/img/icons/star.png" alt="">
-                                E-Commerce Development
-                            </li>
-                            <p> E-commerce solutions that make it easier to shop online, boost profits, and expand the consumer base </p>
-                            <li><img src="assets/img/icons/star.png" alt="">
-                                Enterprise Web Development
-                            </li>
-                            <p>Highly functional ERP web solution for greater user engagement, team collaboration, and transparent outcomes </p>
-                            <li><img src="assets/img/icons/star.png" alt="">
-                                CMS Web Development
-                            </li>
-                            <p>Web applications with a simple user interface for managing your digital assets effectively and gaining a competitive edge </p>
-                            <li>
-                                <img src="assets/img/icons/star.png" alt="">
-                                Custom Web Development
-                            </li>
-                            <p>websites that are fully personalized to increase efficiency, accelerate corporate operations, and increase revenue </p>
-                            <li><img src="assets/img/icons/star.png" alt="">
-                                Support & Maintenance
-                            </li>
-                            <p>Unparalleled maintenance assistance and services to ensure that your website is operating properly, securely, and without bugs </p>
-                        </ul>
-
-                        <div class="details-thumb mt-30">
-                            <img src="assets/img/banner/banner-4.png" alt="img">
-                        </div>
-                        <h2 class="sotcox-title mt-85 mb-25">Why Are We the Best Web Developers? </h2>
-                        <p>Web Development with Unify Tech induces the best indices of technology. We take care of the UI/UX and the seamless functionality of the website with scrutiny.</p>
-                        <ul class="list-unstyled blog-list-item">
-                            <li>
-                                <img src="assets/img/icons/star.png" alt="">
-                                Highly Responsive
-                            </li>
-                            <li><img src="assets/img/icons/star.png" alt="">
-                                Quick Loading
-                            </li>
-                            <li><img src="assets/img/icons/star.png" alt="">
-                                Robust & Scalable
-                            </li>
-                            <li><img src="assets/img/icons/star.png" alt="">
-                                Quick Solutions
-                            </li>
-                        </ul>
-
-                        <h5 class="mt-20 mb-20">Take the flight of digital popularity with an intuitive & Smart Web Solution </h5>
-                        <a href="contact.html">Get Started<span></span></a>
+                    <div class="details-content">
+
+                        <h2 class="sotcox-title mb-25">Tap into the Hub of Exceptional Web Development Services </h2>
+
+                        <p>With an agile development process and the latest technological integrations, we build your tech savvy solutions. </p>
+
+
+
+                        <a href="contact.html">Get A Free Consultation <span></span></a>
+
+
+
+
+
+                        <h2 class="sotcox-title mt-85 mb-25"> We ensure Robust Backend Architecture for Seamless Outcome </h2>
+
+                        <p>Everything that a user cannot see is the backend of a website. Typically, this refers to the code that produces the "server-side" content of the website, or the pages that users view. This may include databases, scripts, instructions, and other automatic tasks the server carries out. The logical interaction of data, server implementation, and data storage and transmission are all included in back-end development.</p>
+
+                        <p>Programming languages including PHP, Python, Go, and more recent JavaScript libraries like Node are frequently used by our back-end developers. Mobile apps, desktop apps, and both desktop and mobile web front ends are all supported by web back ends. With the power of technology, we are the top web application development Company. </p>
+
+                        <h2 class="sotcox-title mt-85 mb-25"> Our Web Development Services Cater to Every Industry Need </h2>
+
+                        <p> With an agile development process and the latest technological integrations, we build your tech savvy solutions.</p>
+
+                        <ul class="list-unstyled blog-list-item">
+
+                            <li>
+
+                                <img src="assets/img/icons/star.png" alt="">
+
+                                Healthcare
+
+                            </li>
+
+                            <li>
+
+                                <img src="assets/img/icons/star.png" alt="">
+
+                                Fitness
+
+                            </li>
+
+                            <li>
+
+                                <img src="assets/img/icons/star.png" alt="">
+
+                                Education
+
+                            </li>
+
+                            <li>
+
+                                <img src="assets/img/icons/star.png" alt="">
+
+                                Game
+
+                            </li>
+
+                            <li>
+
+                                <img src="assets/img/icons/star.png" alt="">
+
+                                Taxi & Transportation
+
+                            </li>
+
+                            <li>
+
+                                <img src="assets/img/icons/star.png" alt="">
+
+                                Food
+
+                            </li>
+
+                            <li>
+
+                                <img src="assets/img/icons/star.png" alt="">
+
+                                Logistics
+
+                            </li>
+
+                            <li>
+
+                                <img src="assets/img/icons/star.png" alt="">
+
+                                Grocery
+
+                            </li>
+
+                            <li>
+
+                                <img src="assets/img/icons/star.png" alt="">
+
+                                Social Networking
+
+                            </li>
+
+                        </ul>
+
+                        <div class="details-thumb mt-30">
+
+                            <img src="assets/img/banner/web-2.png" alt="img">
+
+                        </div>
+
+                        <h2 class="sotcox-title mt-85 mb-25">Our Exquisite Web Development Services </h2>
+
+                        <p>Web Development Services at Unify Tech not only complies with every business but gives the right uplift that a venture needs the most.</p>
+
+                        <ul class="list-unstyled blog-list-item">
+
+
+
+                            <li><img src="assets/img/icons/star.png" alt="">
+
+                                Web Portal Development
+
+                            </li>
+
+                            <p>Customer-focused websites with all the features you need to grow your business online </p>
+
+                            <li><img src="assets/img/icons/star.png" alt="">
+
+                                E-Commerce Development
+
+                            </li>
+
+                            <p> E-commerce solutions that make it easier to shop online, boost profits, and expand the consumer base </p>
+
+                            <li><img src="assets/img/icons/star.png" alt="">
+
+                                Enterprise Web Development
+
+                            </li>
+
+                            <p>Highly functional ERP web solution for greater user engagement, team collaboration, and transparent outcomes </p>
+
+                            <li><img src="assets/img/icons/star.png" alt="">
+
+                                CMS Web Development
+
+                            </li>
+
+                            <p>Web applications with a simple user interface for managing your digital assets effectively and gaining a competitive edge </p>
+
+                            <li>
+
+                                <img src="assets/img/icons/star.png" alt="">
+
+                                Custom Web Development
+
+                            </li>
+
+                            <p>websites that are fully personalized to increase efficiency, accelerate corporate operations, and increase revenue </p>
+
+                            <li><img src="assets/img/icons/star.png" alt="">
+
+                                Support & Maintenance
+
+                            </li>
+
+                            <p>Unparalleled maintenance assistance and services to ensure that your website is operating properly, securely, and without bugs </p>
+
+                        </ul>
+
+
+
+                        <div class="details-thumb mt-30">
+
+                            <img src="assets/img/banner/banner-4.png" alt="img">
+
+                        </div>
+
+                        <h2 class="sotcox-title mt-85 mb-25">Why Are We the Best Web Developers? </h2>
+
+                        <p>Web Development with Unify Tech induces the best indices of technology. We take care of the UI/UX and the seamless functionality of the website with scrutiny.</p>
+
+                        <ul class="list-unstyled blog-list-item">
+
+                            <li>
+
+                                <img src="assets/img/icons/star.png" alt="">
+
+                                Highly Responsive
+
+                            </li>
+
+                            <li><img src="assets/img/icons/star.png" alt="">
+
+                                Quick Loading
+
+                            </li>
+
+                            <li><img src="assets/img/icons/star.png" alt="">
+
+                                Robust & Scalable
+
+                            </li>
+
+                            <li><img src="assets/img/icons/star.png" alt="">
+
+                                Quick Solutions
+
+                            </li>
+
+                        </ul>
+
+
+
+                        <h5 class="mt-20 mb-20">Take the flight of digital popularity with an intuitive & Smart Web Solution </h5>
+
+                        <a href="contact.html">Get Started<span></span></a>
+
                     </div>
                 </div>
                 <div class="sidebar-wrapper reveal" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 24px; padding: 30px; position: sticky; top: 100px;">

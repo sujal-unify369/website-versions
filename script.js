@@ -77,11 +77,13 @@ document.addEventListener('DOMContentLoaded', () => {
             reset() {
                 this.x = Math.random() * canvas.width;
                 this.y = Math.random() * canvas.height;
-                this.size = Math.random() * 2.5 + 0.5;
-                this.speedX = (Math.random() - 0.5) * 0.8;
-                this.speedY = (Math.random() - 0.5) * 0.8;
-                this.opacity = Math.random() * 0.5 + 0.2;
-                this.color = Math.random() > 0.5 ? '#00d4ff' : '#7b2ff7';
+                this.size = Math.random() * 2.0 + 0.5; // Slightly smaller dust motes
+                this.speedX = (Math.random() - 0.5) * 0.3; // Much slower drift speed
+                this.speedY = (Math.random() - 0.5) * 0.3;
+                this.opacity = Math.random() * 0.4 + 0.1;
+                // Choose colors from sage green (#7f8e7b), terracotta (#c85a32), dusk pink (#d6a29a), or warm sand
+                const colors = ['#7f8e7b', '#c85a32', '#d6a29a', '#e8d8c8'];
+                this.color = colors[Math.floor(Math.random() * colors.length)];
             }
             update() {
                 this.x += this.speedX;
@@ -100,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         function initParticles() {
-            const count = Math.min(80, Math.floor((canvas.width * canvas.height) / 15000));
+            const count = Math.min(60, Math.floor((canvas.width * canvas.height) / 20000));
             particles = [];
             for (let i = 0; i < count; i++) {
                 particles.push(new Particle());
@@ -113,10 +115,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     const dx = particles[i].x - particles[j].x;
                     const dy = particles[i].y - particles[j].y;
                     const dist = Math.sqrt(dx * dx + dy * dy);
-                    if (dist < 150) {
+                    if (dist < 180) {
                         ctx.beginPath();
-                        ctx.strokeStyle = '#00d4ff';
-                        ctx.globalAlpha = 0.08 * (1 - dist / 150);
+                        ctx.strokeStyle = '#7f8e7b'; // Soft sage green connection lines
+                        ctx.globalAlpha = 0.04 * (1 - dist / 180);
                         ctx.lineWidth = 0.5;
                         ctx.moveTo(particles[i].x, particles[i].y);
                         ctx.lineTo(particles[j].x, particles[j].y);
@@ -679,4 +681,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     console.log('🚀 Unify Technologies - Dynamic Website Loaded Successfully!');
+});
+const themeToggle = document.getElementById('themeToggle');
+const htmlEl = document.documentElement;
+
+// Load saved theme (or default to light)
+const savedTheme = localStorage.getItem('theme') || 'light';
+htmlEl.setAttribute('data-theme', savedTheme);
+
+themeToggle.addEventListener('click', () => {
+    const currentTheme = htmlEl.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    htmlEl.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
 });

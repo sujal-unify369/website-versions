@@ -19,16 +19,17 @@
             min-height: 80vh;
         }
         .details-wrapper h2.sotcox-title {
+            font-family: var(--font-serif);
             font-size: 2rem;
-            font-weight: 800;
-            color: #fff;
+            font-weight: 500;
+            color: var(--text-main);
             margin-top: 40px;
             margin-bottom: 20px;
         }
         .details-wrapper p {
             color: var(--text-muted);
             margin-bottom: 24px;
-            line-height: 1.7;
+            line-height: 1.85; /* Airy line-height */
         }
         .details-wrapper ul.blog-list-item {
             margin: 24px 0;
@@ -41,7 +42,7 @@
             align-items: center;
             gap: 12px;
             font-weight: 600;
-            color: #fff;
+            color: var(--text-main);
         }
         .details-wrapper ul.blog-list-item li img {
             width: 16px;
@@ -55,24 +56,29 @@
             font-style: italic;
         }
         .sotcox-btn {
-            background: linear-gradient(135deg, var(--primary-accent), var(--secondary-accent));
+            background: var(--secondary-accent);
             padding: 14px 28px;
             border-radius: 30px;
-            font-weight: 700;
+            font-weight: 600;
             color: #fff;
             display: inline-flex;
             align-items: center;
-            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.25);
-            margin: 20px 0;
+            transition: var(--transition-normal);
         }
         .sotcox-btn:hover {
-            box-shadow: 0 8px 30px var(--accent-glow);
+            background: #af4d27;
             transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(200, 90, 50, 0.2);
         }
         .details-thumb img {
             border-radius: 16px;
             border: 1px solid var(--border-color);
             margin: 30px 0;
+        }
+        .sidebar-wrapper h3 {
+            font-family: var(--font-serif);
+            font-weight: 500;
+            color: var(--text-main);
         }
     </style>
 </head>
@@ -85,9 +91,7 @@
     <!-- ====== PRELOADER ====== -->
     <div class="preloader" id="preloader">
         <div class="preloader-inner">
-            <div class="preloader-logo">U</div>
-            <div class="preloader-text">UNIFY TECH</div>
-            <div class="preloader-bar">
+             <img class = "image" height="200" width="300"  src="logo.png">
                 <div class="preloader-progress"></div>
             </div>
         </div>
@@ -97,8 +101,7 @@
     <nav class="navbar scrolled" id="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo" id="nav-logo">
-                <span class="logo-icon">U</span>
-                <span class="logo-text">Unify<span class="logo-accent">Tech</span></span>
+                 <img class = "image" height="100px" width="140px" src="logo.png">
             </a>
 
             <ul class="nav-links" id="navLinks">
@@ -148,141 +151,276 @@
         <div class="container">
             <div class="about-grid" style="grid-template-columns: 1.3fr 0.7fr; align-items: start;">
                 <div class="details-wrapper reveal">
-                    <div class="details-content">
-                            <h2 class="sotcox-title mb-15">What Is the Need for a Food Delivery and Ordering App</h2>
-
-                            <h5 class="mb-25">It is time for you to outshine the competition by switching to the fully-custom food delivery app </h5>
-
-                             <ul class="list-unstyled blog-list-item">
-                                <li>
-                                    <img src="assets/img/icons/star.png" alt="">
-                                    Witness the rise in number of orders you get   
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Get rid of paying unnecessary commissions  
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Give your patients a convenient food experience 
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Utilize your resources in a most efficient manner  
-                                </li>
-                            </ul>
-
-                             <div class="details-thumb mt-25">
-                                <img src="assets/img/banner/food_industries_inner.jpg" alt="img">
-                            </div>
-
-                            <h3 class="mt-50 mb-25">Give a New Definition to Food Delivery with Us! </h3>
-                            <p>Features Our Food Delivery App Have for You</p>
-                           
-
-                            <h5 class="mb-25">Admin Panel  </h5>
-                            <ul class="list-unstyled blog-list-item">
-                                <li>
-                                    <img src="assets/img/icons/star.png" alt="">
-                                    A smart dashboard to manage everything    
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    An easy check on payment status  
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Easy addition and editing of discounts  
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Get to manage all your restaurants    
-                                </li>
-                            </ul>
-                            <h5 class="mt-25 mb-25">Customer Panel</h5>
-                            <ul class="list-unstyled blog-list-item">
-                                <li>
-                                    <img src="assets/img/icons/star.png" alt="">
-                                    Multiple options to make payments   
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Quick registration options for new customers    
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Quick registration options for new customers    
-                                </li>
-                            </ul>
-
-                            <h5 class="mt-25 mb-25">Delivery Partner Panel</h5>
-                            <ul class="list-unstyled blog-list-item">
-                                <li>
-                                    <img src="assets/img/icons/star.png" alt="">
-                                    Allow delivery partners to see requests easily   
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Get them the best routes for food delivery      
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Instant tracking of when to pick up meals      
-                                </li>
-                                 <li><img src="assets/img/icons/star.png" alt="">
-                                    Giving delivery partner the access to locate        
-                                </li>
-                            </ul>
-
-                            <h5 class="mt-25 mb-25">Restaurant Panel  </h5>
-                            <ul class="list-unstyled blog-list-item">
-                                <li>
-                                    <img src="assets/img/icons/star.png" alt="">
-                                    Order management from a single place    
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Give ability to food providers to add dishes       
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Impart any help needed by partners        
-                                </li>
-                            </ul>
-
-
-                            <h5 class="mt-15 mb-15">Let Your Customer Experience the Best Food Ordering Experience with Ai-Powered Technology with Unify Tech</h5>
-
-                            <p>Build your Brand with Trust!  </p>
-
-                            <h5 class="mb-10">A Food Delivery App Optimized for All Kinds of Business</h5>
-
-                            <p>We are ready to give restaurants & their customers a smooth selling-buying experience with a spark of flexibility  </p>
-
-                            <h6 class="mb-25">We Offer Services to: </h6>
-
-                            <h5 class="mb-10">Single Restaurants </h5>
-                            
-                            <p>With your restaurant mobile app, simplify food ordering for your customers and boost your ROI   </p>
-
-                            <h5 class="mb-10">Food Chains</h5>
-                            <p>With custom food delivery app development, manage all operations in a well-organized manner</p>
-
-                            <h5 class="mb-10">Food Startups</h5>
-                            <p>Give a boost to your startup & increase the chances of revenue by inculcating latest technology</p>
-
-                            <h3 class="mt-25 mb-25">Unify Tech Is Here with a Chance for You to Stand Out in the Crowd</h3>
-                            <p>We know that food is nothing new. However, as it gets a pump of latest tech solution, there is nothing that can stop you from becoming the next food chief  </p>
-
-                            <a href="contact.html">Partner with us!<span style="top: 238px; left: 140.625px;"></span></a>
-
-
-                            <h3 class="mt-25 mb-25"> Your One-Stop Solution to Accelerate Food Business Growth</h3>
-                            <p class="mb-25">  Get Ready to Revolutionize Your Restaurants with a Customized Food Delivery Experience</p>
-
-                            <ul class="list-unstyled blog-list-item">
-                                <li><b>Simplify Food Ordering</b>–</li>
-                                <li>
-                                     Add innovation to the food ordering process for your customers with easy placement of orders    
-                                </li>
-                                <li><b>Supervise Food Business</b>–</li>
-                                <li>
-                                     With an impactful dashboard, manage all your discounts, ratings & reviews, payments, & much more        
-                                </li>
-                                <li><b>Secure & timely deliveries</b>–</li>
-                                <li>
-                                     Get an easy-to-use app for your delivery team a keep a record of daily earnings and a lot more      
-                                </li>
-                            </ul>
-
+                    <div class="details-content">
+
+                            <h2 class="sotcox-title mb-15">What Is the Need for a Food Delivery and Ordering App</h2>
+
+
+
+                            <h5 class="mb-25">It is time for you to outshine the competition by switching to the fully-custom food delivery app </h5>
+
+
+
+                             <ul class="list-unstyled blog-list-item">
+
+                                <li>
+
+                                    <img src="assets/img/icons/star.png" alt="">
+
+                                    Witness the rise in number of orders you get   
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Get rid of paying unnecessary commissions  
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Give your patients a convenient food experience 
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Utilize your resources in a most efficient manner  
+
+                                </li>
+
+                            </ul>
+
+
+
+                             <div class="details-thumb mt-25">
+
+                                <img src="assets/img/banner/food_industries_inner.jpg" alt="img">
+
+                            </div>
+
+
+
+                            <h3 class="mt-50 mb-25">Give a New Definition to Food Delivery with Us! </h3>
+
+                            <p>Features Our Food Delivery App Have for You</p>
+
+                           
+
+
+
+                            <h5 class="mb-25">Admin Panel  </h5>
+
+                            <ul class="list-unstyled blog-list-item">
+
+                                <li>
+
+                                    <img src="assets/img/icons/star.png" alt="">
+
+                                    A smart dashboard to manage everything    
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    An easy check on payment status  
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Easy addition and editing of discounts  
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Get to manage all your restaurants    
+
+                                </li>
+
+                            </ul>
+
+                            <h5 class="mt-25 mb-25">Customer Panel</h5>
+
+                            <ul class="list-unstyled blog-list-item">
+
+                                <li>
+
+                                    <img src="assets/img/icons/star.png" alt="">
+
+                                    Multiple options to make payments   
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Quick registration options for new customers    
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Quick registration options for new customers    
+
+                                </li>
+
+                            </ul>
+
+
+
+                            <h5 class="mt-25 mb-25">Delivery Partner Panel</h5>
+
+                            <ul class="list-unstyled blog-list-item">
+
+                                <li>
+
+                                    <img src="assets/img/icons/star.png" alt="">
+
+                                    Allow delivery partners to see requests easily   
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Get them the best routes for food delivery      
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Instant tracking of when to pick up meals      
+
+                                </li>
+
+                                 <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Giving delivery partner the access to locate        
+
+                                </li>
+
+                            </ul>
+
+
+
+                            <h5 class="mt-25 mb-25">Restaurant Panel  </h5>
+
+                            <ul class="list-unstyled blog-list-item">
+
+                                <li>
+
+                                    <img src="assets/img/icons/star.png" alt="">
+
+                                    Order management from a single place    
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Give ability to food providers to add dishes       
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Impart any help needed by partners        
+
+                                </li>
+
+                            </ul>
+
+
+
+
+
+                            <h5 class="mt-15 mb-15">Let Your Customer Experience the Best Food Ordering Experience with Ai-Powered Technology with Unify Tech</h5>
+
+
+
+                            <p>Build your Brand with Trust!  </p>
+
+
+
+                            <h5 class="mb-10">A Food Delivery App Optimized for All Kinds of Business</h5>
+
+
+
+                            <p>We are ready to give restaurants & their customers a smooth selling-buying experience with a spark of flexibility  </p>
+
+
+
+                            <h6 class="mb-25">We Offer Services to: </h6>
+
+
+
+                            <h5 class="mb-10">Single Restaurants </h5>
+
+                            
+
+                            <p>With your restaurant mobile app, simplify food ordering for your customers and boost your ROI   </p>
+
+
+
+                            <h5 class="mb-10">Food Chains</h5>
+
+                            <p>With custom food delivery app development, manage all operations in a well-organized manner</p>
+
+
+
+                            <h5 class="mb-10">Food Startups</h5>
+
+                            <p>Give a boost to your startup & increase the chances of revenue by inculcating latest technology</p>
+
+
+
+                            <h3 class="mt-25 mb-25">Unify Tech Is Here with a Chance for You to Stand Out in the Crowd</h3>
+
+                            <p>We know that food is nothing new. However, as it gets a pump of latest tech solution, there is nothing that can stop you from becoming the next food chief  </p>
+
+
+
+                            <a href="contact.html">Partner with us!<span style="top: 238px; left: 140.625px;"></span></a>
+
+
+
+
+
+                            <h3 class="mt-25 mb-25"> Your One-Stop Solution to Accelerate Food Business Growth</h3>
+
+                            <p class="mb-25">  Get Ready to Revolutionize Your Restaurants with a Customized Food Delivery Experience</p>
+
+
+
+                            <ul class="list-unstyled blog-list-item">
+
+                                <li><b>Simplify Food Ordering</b>–</li>
+
+                                <li>
+
+                                     Add innovation to the food ordering process for your customers with easy placement of orders    
+
+                                </li>
+
+                                <li><b>Supervise Food Business</b>–</li>
+
+                                <li>
+
+                                     With an impactful dashboard, manage all your discounts, ratings & reviews, payments, & much more        
+
+                                </li>
+
+                                <li><b>Secure & timely deliveries</b>–</li>
+
+                                <li>
+
+                                     Get an easy-to-use app for your delivery team a keep a record of daily earnings and a lot more      
+
+                                </li>
+
+                            </ul>
+
+
+
                         </div>
                 </div>
                 <div class="sidebar-wrapper reveal" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 24px; padding: 30px; position: sticky; top: 100px;">

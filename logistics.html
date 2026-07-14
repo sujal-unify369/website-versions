@@ -19,16 +19,17 @@
             min-height: 80vh;
         }
         .details-wrapper h2.sotcox-title {
+            font-family: var(--font-serif);
             font-size: 2rem;
-            font-weight: 800;
-            color: #fff;
+            font-weight: 500;
+            color: var(--text-main);
             margin-top: 40px;
             margin-bottom: 20px;
         }
         .details-wrapper p {
             color: var(--text-muted);
             margin-bottom: 24px;
-            line-height: 1.7;
+            line-height: 1.85; /* Airy line-height */
         }
         .details-wrapper ul.blog-list-item {
             margin: 24px 0;
@@ -41,7 +42,7 @@
             align-items: center;
             gap: 12px;
             font-weight: 600;
-            color: #fff;
+            color: var(--text-main);
         }
         .details-wrapper ul.blog-list-item li img {
             width: 16px;
@@ -55,24 +56,29 @@
             font-style: italic;
         }
         .sotcox-btn {
-            background: linear-gradient(135deg, var(--primary-accent), var(--secondary-accent));
+            background: var(--secondary-accent);
             padding: 14px 28px;
             border-radius: 30px;
-            font-weight: 700;
+            font-weight: 600;
             color: #fff;
             display: inline-flex;
             align-items: center;
-            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.25);
-            margin: 20px 0;
+            transition: var(--transition-normal);
         }
         .sotcox-btn:hover {
-            box-shadow: 0 8px 30px var(--accent-glow);
+            background: #af4d27;
             transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(200, 90, 50, 0.2);
         }
         .details-thumb img {
             border-radius: 16px;
             border: 1px solid var(--border-color);
             margin: 30px 0;
+        }
+        .sidebar-wrapper h3 {
+            font-family: var(--font-serif);
+            font-weight: 500;
+            color: var(--text-main);
         }
     </style>
 </head>
@@ -85,9 +91,7 @@
     <!-- ====== PRELOADER ====== -->
     <div class="preloader" id="preloader">
         <div class="preloader-inner">
-            <div class="preloader-logo">U</div>
-            <div class="preloader-text">UNIFY TECH</div>
-            <div class="preloader-bar">
+            <img class = "image" height="200" width="300"  src="logo.png">
                 <div class="preloader-progress"></div>
             </div>
         </div>
@@ -97,8 +101,7 @@
     <nav class="navbar scrolled" id="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo" id="nav-logo">
-                <span class="logo-icon">U</span>
-                <span class="logo-text">Unify<span class="logo-accent">Tech</span></span>
+                 <img class = "image" height="100px" width="140px" src="logo.png">
             </a>
 
             <ul class="nav-links" id="navLinks">
@@ -148,92 +151,178 @@
         <div class="container">
             <div class="about-grid" style="grid-template-columns: 1.3fr 0.7fr; align-items: start;">
                 <div class="details-wrapper reveal">
-                    <div class="details-content">
-                            <h2 class="sotcox-title mb-15">Agile & Cost-Effective logistics Services </h2>
-
-                            <h5 class="mb-25">From Shipment to Delivery: Innovative Solutions & Real Time Tracking Capabilities</h5>
-
-                             <h3 class="mt-50 mb-25">Unlock the Potential of Your Logistics with Our Expert Service</h3>
-
-                            <p> Empower your logistics business with our customized management solutions built just for you. With us, you will get top-notch, Shipping Logistics Management Software Development, Fleet Management Software Development, and Transportation Management Software Development. However, the list doesn’t end here, Logistics and Freight Management Development, Order Management and Warehouse Management services also await you.  </p>
-
-                            <div class="details-thumb">
-                                <img src="assets/img/banner/logistics.jpg" alt="img">
-                            </div>
-
-                            <p class="mt-15 mb-25">Accelerate Your Logistics Business With Our On-Demand App Solutions!</p>
-
-                            <h3 class="mt-20 mb-25">Experience Hassle-Free Logistics with Our End-To-End Solutions</h3>
-
-                             <ul class="list-unstyled blog-list-item">
-                                <li>
-                                    <img src="assets/img/icons/star.png" alt="">
-                                    Transform your Supply Chain into a Seamless Powerhouse. 
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Maximize Efficiency with our Dedicated Fleet & Management Solutions 
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Conquer the Final Stretch With Our Last-Mile Delivery Management Solutions 
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Optimize your Inventory Management with Our Cutting-Edge Solutions 
-                                </li>
-
-
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                   Navigate Your Business to Success with Our Transport management Solutions  
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                   Streamline Your Warehouse Operations with Precision & Ease  
-                                </li>
-                            </ul>
-
-                            <div class="business_ideas mt-30">
-                                <h3>Got an Idea that Would Disrupt The Logistics Industry? </h3>
-                                <p>Unify Tech offers a Custom Tech Suite to Cater to Your Logistic Needs </p>
-                                <a href="contact" class="button_consult">Free Consultation Call </a>
-                            </div>
-
-                            <h3 class="mt-20 mb-10">Premium App for Customers </h3>
-                            <p class="mt-15 mb-25">Unify Tech offers a Custom Tech Suite to Cater to Your Logistic Needs</p>
-
-                            <ul class="list-unstyled blog-list-item">
-                                <li>
-                                    <img src="assets/img/icons/star.png" alt="">
-                                    Track Delivery  
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Multiple Payment Modes 
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Reviews & Ratings 
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    In-App Chat 
-                                </li>
-                            </ul>
-                            <br>
-                            <div class="details-thumb">
-                                <img src="assets/img/banner/logistics_inner.jpg" alt="img">
-                            </div>
-                            <h3 class="sotcox-title mt-50 mb-25">Why Partner with Unify Tech?</h3>
-                            <p>Experience unparalleled efficiency with our best-in-class tracking & logistics mobile app development service</p>
-
-                            <ul class="list-unstyled blog-list-item">
-                                <li>
-                                    <img src="assets/img/icons/star.png" alt="">
-                                    Source code & IP rights   
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Get your App Running in no time  
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Round the clock Customer Support  
-                                </li>
-                            </ul>
-                            <p>Maximize Fleet Efficiency & Streamline Operations with Our Advanced Logistics Scheduling Software!</p>
-
+                    <div class="details-content">
+
+                            <h2 class="sotcox-title mb-15">Agile & Cost-Effective logistics Services </h2>
+
+
+
+                            <h5 class="mb-25">From Shipment to Delivery: Innovative Solutions & Real Time Tracking Capabilities</h5>
+
+
+
+                             <h3 class="mt-50 mb-25">Unlock the Potential of Your Logistics with Our Expert Service</h3>
+
+
+
+                            <p> Empower your logistics business with our customized management solutions built just for you. With us, you will get top-notch, Shipping Logistics Management Software Development, Fleet Management Software Development, and Transportation Management Software Development. However, the list doesn’t end here, Logistics and Freight Management Development, Order Management and Warehouse Management services also await you.  </p>
+
+
+
+                            <div class="details-thumb">
+
+                                <img src="assets/img/banner/logistics.jpg" alt="img">
+
+                            </div>
+
+
+
+                            <p class="mt-15 mb-25">Accelerate Your Logistics Business With Our On-Demand App Solutions!</p>
+
+
+
+                            <h3 class="mt-20 mb-25">Experience Hassle-Free Logistics with Our End-To-End Solutions</h3>
+
+
+
+                             <ul class="list-unstyled blog-list-item">
+
+                                <li>
+
+                                    <img src="assets/img/icons/star.png" alt="">
+
+                                    Transform your Supply Chain into a Seamless Powerhouse. 
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Maximize Efficiency with our Dedicated Fleet & Management Solutions 
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Conquer the Final Stretch With Our Last-Mile Delivery Management Solutions 
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Optimize your Inventory Management with Our Cutting-Edge Solutions 
+
+                                </li>
+
+
+
+
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                   Navigate Your Business to Success with Our Transport management Solutions  
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                   Streamline Your Warehouse Operations with Precision & Ease  
+
+                                </li>
+
+                            </ul>
+
+
+
+                            <div class="business_ideas mt-30">
+
+                                <h3>Got an Idea that Would Disrupt The Logistics Industry? </h3>
+
+                                <p>Unify Tech offers a Custom Tech Suite to Cater to Your Logistic Needs </p>
+
+                                <a href="contact" class="button_consult">Free Consultation Call </a>
+
+                            </div>
+
+
+
+                            <h3 class="mt-20 mb-10">Premium App for Customers </h3>
+
+                            <p class="mt-15 mb-25">Unify Tech offers a Custom Tech Suite to Cater to Your Logistic Needs</p>
+
+
+
+                            <ul class="list-unstyled blog-list-item">
+
+                                <li>
+
+                                    <img src="assets/img/icons/star.png" alt="">
+
+                                    Track Delivery  
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Multiple Payment Modes 
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Reviews & Ratings 
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    In-App Chat 
+
+                                </li>
+
+                            </ul>
+
+                            <br>
+
+                            <div class="details-thumb">
+
+                                <img src="assets/img/banner/logistics_inner.jpg" alt="img">
+
+                            </div>
+
+                            <h3 class="sotcox-title mt-50 mb-25">Why Partner with Unify Tech?</h3>
+
+                            <p>Experience unparalleled efficiency with our best-in-class tracking & logistics mobile app development service</p>
+
+
+
+                            <ul class="list-unstyled blog-list-item">
+
+                                <li>
+
+                                    <img src="assets/img/icons/star.png" alt="">
+
+                                    Source code & IP rights   
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Get your App Running in no time  
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Round the clock Customer Support  
+
+                                </li>
+
+                            </ul>
+
+                            <p>Maximize Fleet Efficiency & Streamline Operations with Our Advanced Logistics Scheduling Software!</p>
+
+
+
                         </div>
                 </div>
                 <div class="sidebar-wrapper reveal" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 24px; padding: 30px; position: sticky; top: 100px;">

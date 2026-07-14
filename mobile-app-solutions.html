@@ -19,16 +19,17 @@
             min-height: 80vh;
         }
         .details-wrapper h2.sotcox-title {
+            font-family: var(--font-serif);
             font-size: 2rem;
-            font-weight: 800;
-            color: #fff;
+            font-weight: 500;
+            color: var(--text-main);
             margin-top: 40px;
             margin-bottom: 20px;
         }
         .details-wrapper p {
             color: var(--text-muted);
             margin-bottom: 24px;
-            line-height: 1.7;
+            line-height: 1.85; /* Airy line-height */
         }
         .details-wrapper ul.blog-list-item {
             margin: 24px 0;
@@ -41,7 +42,7 @@
             align-items: center;
             gap: 12px;
             font-weight: 600;
-            color: #fff;
+            color: var(--text-main);
         }
         .details-wrapper ul.blog-list-item li img {
             width: 16px;
@@ -55,24 +56,29 @@
             font-style: italic;
         }
         .sotcox-btn {
-            background: linear-gradient(135deg, var(--primary-accent), var(--secondary-accent));
+            background: var(--secondary-accent);
             padding: 14px 28px;
             border-radius: 30px;
-            font-weight: 700;
+            font-weight: 600;
             color: #fff;
             display: inline-flex;
             align-items: center;
-            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.25);
-            margin: 20px 0;
+            transition: var(--transition-normal);
         }
         .sotcox-btn:hover {
-            box-shadow: 0 8px 30px var(--accent-glow);
+            background: #af4d27;
             transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(200, 90, 50, 0.2);
         }
         .details-thumb img {
             border-radius: 16px;
             border: 1px solid var(--border-color);
             margin: 30px 0;
+        }
+        .sidebar-wrapper h3 {
+            font-family: var(--font-serif);
+            font-weight: 500;
+            color: var(--text-main);
         }
     </style>
 </head>
@@ -85,9 +91,7 @@
     <!-- ====== PRELOADER ====== -->
     <div class="preloader" id="preloader">
         <div class="preloader-inner">
-            <div class="preloader-logo">U</div>
-            <div class="preloader-text">UNIFY TECH</div>
-            <div class="preloader-bar">
+             <img class = "image" height="200" width="300"  src="logo.png">
                 <div class="preloader-progress"></div>
             </div>
         </div>
@@ -97,8 +101,7 @@
     <nav class="navbar scrolled" id="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo" id="nav-logo">
-                <span class="logo-icon">U</span>
-                <span class="logo-text">Unify<span class="logo-accent">Tech</span></span>
+                 <img class = "image" height="100px" width="140px" src="logo.png">
             </a>
 
             <ul class="nav-links" id="navLinks">
@@ -148,178 +151,350 @@
         <div class="container">
             <div class="about-grid" style="grid-template-columns: 1.3fr 0.7fr; align-items: start;">
                 <div class="details-wrapper reveal">
-                    <div class="details-content">
-                            <h2 class="sotcox-title mb-15">Leading-Edge Mobile App Development Services  </h2>
-
-                            <h5 class="mb-25">Amplify your business’s efficiency with tech-savvy, feature-rich, affordable & easy-to-use mobile apps. </h5>
-
-                           
-                             <div class="details-thumb">
-                                <img src="assets/img/services/mobile-app.jpg" alt="img">
-                            </div>
-
-                            <h3 class="mt-50 mb-25">Our Vision to Develop Custom Mobile Applications lies in Improving User Experience</h3>
-                            <p>We provide modern-day mobile app development services that go above and beyond industry and market standards. </p>
-                            <ul class="list-unstyled blog-list-item">
-                                 <li><img src="assets/img/icons/star.png" alt="">
-                                 Cutting-Edge Digital Solutions 
-                                </li>
-                                <li>
-                                    <img src="assets/img/icons/star.png" alt="">
-                                    Quality Assurance & Testing
-                                </li>
-                               
-                               
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                C-Suite Consultation 
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Next-Gen Designs for User Delight 
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Dedicated Mobile App Developers 
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Framework for agile methods 
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Safeguarded NDA Contracts 
-                                </li>
-                            </ul>
-
-                            <br>
-
-
-                            <h3 class="mt-50 mb-25">Alone you are a venture, with us you will be a Brand!</h3>
-                            <p>Our Mobile App Development services adeptly ensures your satisfaction  </p>
-                            <ul class="list-unstyled blog-list-item">
-                                 <li><img src="assets/img/icons/star.png" alt="">
-                                 White Label 
-                                </li>
-                                <li>
-                                    <img src="assets/img/icons/star.png" alt="">
-                                    100% Customization 
-                                </li>
-                               
-                               
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Complete Source Code 
-                                </li>
-                               
-                            </ul>
-                            <br>
-                            <p>Shoot Up Your Revenue with an Intuitive & Smart Mobile Application  </p>
-                            <a href="contact.html">Let’s Discuss Your Idea!<span></span></a>
- 
-
-                            <br>
-
-
-                            <h3 class="mt-50 mb-25">Your Intent, Our Innovation </h3>
-                            <p>Our tech-savvy bespoke app developers never stop working to create the greatest mobile application possible to support your company's rapid market expansion. We provide you with the best! </p>
-                            <ul class="list-unstyled blog-list-item">
-                                 <li><img src="assets/img/icons/star.png" alt="">
-                                 Custom Mobile App Development 
-                                </li>
-                                <li>
-                                    <img src="assets/img/icons/star.png" alt="">
-                                    Hybrid-Native Mobile App Development 
-                                </li>
-                               
-                               
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                iPhone Mobile App Development 
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Android Mobile App Development 
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Web App Development 
-                                </li>
-                              
-                            </ul>
-
-
-
-                            <br>
-
-                            <h3 class="mt-50 mb-25">Our Exquisite Services</h3>
-                            <p> We Have a Complete Hub of Mobile App Development Solutions Suiting Every Business Need </p>
-                            <ul class="list-unstyled blog-list-item">
-                                 <li><img src="assets/img/icons/star.png" alt="">
-                                 On-Demand App Solution 
-                                </li>
-                                <li>
-                                    <img src="assets/img/icons/star.png" alt="">
-                                    Food & Beverage Solution 
-                                </li>
-                               
-                               
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                E-Commerce & Marketplace Solution 
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Pickup & Delivery Solution  
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Healthcare & Medical Solution  
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Education & Learning Solution 
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Social- Networking Solution 
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Transportation Solution  
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Home Services & Laundry Solution 
-                                </li>
-                            </ul>
-<br>
-                            <p>Ready with Your Business Idea? We’re Ready to Make It a Seamless Reality!</p>
-                            <a href="contact.html">Book A Free Demo<span></span></a>
-
-                            <br>
-
-                            <h3 class="mt-50 mb-25">We Develop Feature-Rich Mobile Apps </h3>
-                            <p>Our app development services come with a package of features that guarantee your solution’s feasibility  </p>
-                            <ul class="list-unstyled blog-list-item">
-                                 <li><img src="assets/img/icons/star.png" alt="">
-                                 Multiple Payment Gateways 
-                                </li>
-                                <li>
-                                    <img src="assets/img/icons/star.png" alt="">
-                                    Advanced Analytics  
-                                </li>
-                               
-                               
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Multi-Language Support 
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Mobile Friendly   
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Discounts & Promo  
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Integrated Chat System
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Geo Location 
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Push Notification 
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Discount & Ratings 
-                                </li>
-                            </ul>
-
-
-
+                    <div class="details-content">
+
+                            <h2 class="sotcox-title mb-15">Leading-Edge Mobile App Development Services  </h2>
+
+
+
+                            <h5 class="mb-25">Amplify your business’s efficiency with tech-savvy, feature-rich, affordable & easy-to-use mobile apps. </h5>
+
+
+
+                           
+
+                             <div class="details-thumb">
+
+                                <img src="assets/img/services/mobile-app.jpg" alt="img">
+
+                            </div>
+
+
+
+                            <h3 class="mt-50 mb-25">Our Vision to Develop Custom Mobile Applications lies in Improving User Experience</h3>
+
+                            <p>We provide modern-day mobile app development services that go above and beyond industry and market standards. </p>
+
+                            <ul class="list-unstyled blog-list-item">
+
+                                 <li><img src="assets/img/icons/star.png" alt="">
+
+                                 Cutting-Edge Digital Solutions 
+
+                                </li>
+
+                                <li>
+
+                                    <img src="assets/img/icons/star.png" alt="">
+
+                                    Quality Assurance & Testing
+
+                                </li>
+
+                               
+
+                               
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                C-Suite Consultation 
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Next-Gen Designs for User Delight 
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Dedicated Mobile App Developers 
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Framework for agile methods 
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Safeguarded NDA Contracts 
+
+                                </li>
+
+                            </ul>
+
+
+
+                            <br>
+
+
+
+
+
+                            <h3 class="mt-50 mb-25">Alone you are a venture, with us you will be a Brand!</h3>
+
+                            <p>Our Mobile App Development services adeptly ensures your satisfaction  </p>
+
+                            <ul class="list-unstyled blog-list-item">
+
+                                 <li><img src="assets/img/icons/star.png" alt="">
+
+                                 White Label 
+
+                                </li>
+
+                                <li>
+
+                                    <img src="assets/img/icons/star.png" alt="">
+
+                                    100% Customization 
+
+                                </li>
+
+                               
+
+                               
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Complete Source Code 
+
+                                </li>
+
+                               
+
+                            </ul>
+
+                            <br>
+
+                            <p>Shoot Up Your Revenue with an Intuitive & Smart Mobile Application  </p>
+
+                            <a href="contact.html">Let’s Discuss Your Idea!<span></span></a>
+
+ 
+
+
+
+                            <br>
+
+
+
+
+
+                            <h3 class="mt-50 mb-25">Your Intent, Our Innovation </h3>
+
+                            <p>Our tech-savvy bespoke app developers never stop working to create the greatest mobile application possible to support your company's rapid market expansion. We provide you with the best! </p>
+
+                            <ul class="list-unstyled blog-list-item">
+
+                                 <li><img src="assets/img/icons/star.png" alt="">
+
+                                 Custom Mobile App Development 
+
+                                </li>
+
+                                <li>
+
+                                    <img src="assets/img/icons/star.png" alt="">
+
+                                    Hybrid-Native Mobile App Development 
+
+                                </li>
+
+                               
+
+                               
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                iPhone Mobile App Development 
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Android Mobile App Development 
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Web App Development 
+
+                                </li>
+
+                              
+
+                            </ul>
+
+
+
+
+
+
+
+                            <br>
+
+
+
+                            <h3 class="mt-50 mb-25">Our Exquisite Services</h3>
+
+                            <p> We Have a Complete Hub of Mobile App Development Solutions Suiting Every Business Need </p>
+
+                            <ul class="list-unstyled blog-list-item">
+
+                                 <li><img src="assets/img/icons/star.png" alt="">
+
+                                 On-Demand App Solution 
+
+                                </li>
+
+                                <li>
+
+                                    <img src="assets/img/icons/star.png" alt="">
+
+                                    Food & Beverage Solution 
+
+                                </li>
+
+                               
+
+                               
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                E-Commerce & Marketplace Solution 
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Pickup & Delivery Solution  
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Healthcare & Medical Solution  
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Education & Learning Solution 
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Social- Networking Solution 
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Transportation Solution  
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Home Services & Laundry Solution 
+
+                                </li>
+
+                            </ul>
+
+<br>
+
+                            <p>Ready with Your Business Idea? We’re Ready to Make It a Seamless Reality!</p>
+
+                            <a href="contact.html">Book A Free Demo<span></span></a>
+
+
+
+                            <br>
+
+
+
+                            <h3 class="mt-50 mb-25">We Develop Feature-Rich Mobile Apps </h3>
+
+                            <p>Our app development services come with a package of features that guarantee your solution’s feasibility  </p>
+
+                            <ul class="list-unstyled blog-list-item">
+
+                                 <li><img src="assets/img/icons/star.png" alt="">
+
+                                 Multiple Payment Gateways 
+
+                                </li>
+
+                                <li>
+
+                                    <img src="assets/img/icons/star.png" alt="">
+
+                                    Advanced Analytics  
+
+                                </li>
+
+                               
+
+                               
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Multi-Language Support 
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Mobile Friendly   
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Discounts & Promo  
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Integrated Chat System
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Geo Location 
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Push Notification 
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Discount & Ratings 
+
+                                </li>
+
+                            </ul>
+
+
+
+
+
+
+
                         </div>
                 </div>
                 <div class="sidebar-wrapper reveal" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 24px; padding: 30px; position: sticky; top: 100px;">

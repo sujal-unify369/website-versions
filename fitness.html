@@ -19,16 +19,17 @@
             min-height: 80vh;
         }
         .details-wrapper h2.sotcox-title {
+            font-family: var(--font-serif);
             font-size: 2rem;
-            font-weight: 800;
-            color: #fff;
+            font-weight: 500;
+            color: var(--text-main);
             margin-top: 40px;
             margin-bottom: 20px;
         }
         .details-wrapper p {
             color: var(--text-muted);
             margin-bottom: 24px;
-            line-height: 1.7;
+            line-height: 1.85; /* Airy line-height */
         }
         .details-wrapper ul.blog-list-item {
             margin: 24px 0;
@@ -41,7 +42,7 @@
             align-items: center;
             gap: 12px;
             font-weight: 600;
-            color: #fff;
+            color: var(--text-main);
         }
         .details-wrapper ul.blog-list-item li img {
             width: 16px;
@@ -55,24 +56,29 @@
             font-style: italic;
         }
         .sotcox-btn {
-            background: linear-gradient(135deg, var(--primary-accent), var(--secondary-accent));
+            background: var(--secondary-accent);
             padding: 14px 28px;
             border-radius: 30px;
-            font-weight: 700;
+            font-weight: 600;
             color: #fff;
             display: inline-flex;
             align-items: center;
-            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.25);
-            margin: 20px 0;
+            transition: var(--transition-normal);
         }
         .sotcox-btn:hover {
-            box-shadow: 0 8px 30px var(--accent-glow);
+            background: #af4d27;
             transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(200, 90, 50, 0.2);
         }
         .details-thumb img {
             border-radius: 16px;
             border: 1px solid var(--border-color);
             margin: 30px 0;
+        }
+        .sidebar-wrapper h3 {
+            font-family: var(--font-serif);
+            font-weight: 500;
+            color: var(--text-main);
         }
     </style>
 </head>
@@ -85,9 +91,7 @@
     <!-- ====== PRELOADER ====== -->
     <div class="preloader" id="preloader">
         <div class="preloader-inner">
-            <div class="preloader-logo">U</div>
-            <div class="preloader-text">UNIFY TECH</div>
-            <div class="preloader-bar">
+             <img class = "image" height="200" width="300"  src="logo.png">
                 <div class="preloader-progress"></div>
             </div>
         </div>
@@ -97,8 +101,7 @@
     <nav class="navbar scrolled" id="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo" id="nav-logo">
-                <span class="logo-icon">U</span>
-                <span class="logo-text">Unify<span class="logo-accent">Tech</span></span>
+                 <img class = "image" height="100px" width="140px" src="logo.png">
             </a>
 
             <ul class="nav-links" id="navLinks">
@@ -148,66 +151,126 @@
         <div class="container">
             <div class="about-grid" style="grid-template-columns: 1.3fr 0.7fr; align-items: start;">
                 <div class="details-wrapper reveal">
-                    <div class="details-content">
-                            <h2 class="sotcox-title mb-15"> Trendsetting Fitness App Development Services</h2>
-                            
-                            <p>Spearhead your fitness business with our flawless digital solutions </p>
-
-
-                            <h2 class="sotcox-title mb-15"> Our World-Class Services Offer a Myriad of Features </h2>
-                            <p>Give your customers an exceptional app integrated with latest features</p>
-                             <ul class="list-unstyled blog-list-item">
-                                <li>
-                                    <img src="assets/img/icons/star.png" alt="">
-                                    Smart Fitness Coach    
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Live Workout Classes   
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Personalized Diet Plans 
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Get real time Support   
-                                </li>
-                                 <li><img src="assets/img/icons/star.png" alt="">
-                                    Track Workouts   
-                                </li>
-                            </ul>
-
-                             <div class="details-thumb mt-25">
-                                <img src="assets/img/banner/fitness_inner.jpg" alt="img">
-                            </div>
-
-                            <h3 class="mt-50 mb-25">Tailored Fitness App Development Services for Your Specific Business </h3>
-                            <p>Automate your Business Operations with our competent Health and Fitness App Development Modules </p>
-
-                            <ul class="list-unstyled blog-list-item mb-25">
-                                <li><b>Wearable Devices </b>–</li>
-                                <li>
-                                    Monitor your user's fitness levels with integrated app development services    
-                                </li>
-                                <li><b>Trackers for Gymnasiums/Personal Training </b>–</li>
-                                <li>
-                                     Assist your coaches and high-end gyms to give their users a dedicated workout app         
-                                </li>
-                                <li><b>Yoga/Meditation </b>–</li>
-                                <li>
-                                     Scale your Yoga/Meditation business with our impressive app development services.       
-                                </li>
-
-                                <li><b>Fitness Tracking</b>–</li>
-                                <li>
-                                     Make fitness tracking seamless & provide best features and functionality to your customers        
-                                </li>
-
-                                <li><b>Nutritional Diet  </b>–</li>
-                                <li>
-                                     Provide your customers with a holistic experience with a wholesome nutrition & diet plan.        
-                                </li>
-                            </ul>
-                            
-
+                    <div class="details-content">
+
+                            <h2 class="sotcox-title mb-15"> Trendsetting Fitness App Development Services</h2>
+
+                            
+
+                            <p>Spearhead your fitness business with our flawless digital solutions </p>
+
+
+
+
+
+                            <h2 class="sotcox-title mb-15"> Our World-Class Services Offer a Myriad of Features </h2>
+
+                            <p>Give your customers an exceptional app integrated with latest features</p>
+
+                             <ul class="list-unstyled blog-list-item">
+
+                                <li>
+
+                                    <img src="assets/img/icons/star.png" alt="">
+
+                                    Smart Fitness Coach    
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Live Workout Classes   
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Personalized Diet Plans 
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Get real time Support   
+
+                                </li>
+
+                                 <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Track Workouts   
+
+                                </li>
+
+                            </ul>
+
+
+
+                             <div class="details-thumb mt-25">
+
+                                <img src="assets/img/banner/fitness_inner.jpg" alt="img">
+
+                            </div>
+
+
+
+                            <h3 class="mt-50 mb-25">Tailored Fitness App Development Services for Your Specific Business </h3>
+
+                            <p>Automate your Business Operations with our competent Health and Fitness App Development Modules </p>
+
+
+
+                            <ul class="list-unstyled blog-list-item mb-25">
+
+                                <li><b>Wearable Devices </b>–</li>
+
+                                <li>
+
+                                    Monitor your user's fitness levels with integrated app development services    
+
+                                </li>
+
+                                <li><b>Trackers for Gymnasiums/Personal Training </b>–</li>
+
+                                <li>
+
+                                     Assist your coaches and high-end gyms to give their users a dedicated workout app         
+
+                                </li>
+
+                                <li><b>Yoga/Meditation </b>–</li>
+
+                                <li>
+
+                                     Scale your Yoga/Meditation business with our impressive app development services.       
+
+                                </li>
+
+
+
+                                <li><b>Fitness Tracking</b>–</li>
+
+                                <li>
+
+                                     Make fitness tracking seamless & provide best features and functionality to your customers        
+
+                                </li>
+
+
+
+                                <li><b>Nutritional Diet  </b>–</li>
+
+                                <li>
+
+                                     Provide your customers with a holistic experience with a wholesome nutrition & diet plan.        
+
+                                </li>
+
+                            </ul>
+
+                            
+
+
+
                         </div>
                 </div>
                 <div class="sidebar-wrapper reveal" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 24px; padding: 30px; position: sticky; top: 100px;">

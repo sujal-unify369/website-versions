@@ -19,16 +19,17 @@
             min-height: 80vh;
         }
         .details-wrapper h2.sotcox-title {
+            font-family: var(--font-serif);
             font-size: 2rem;
-            font-weight: 800;
-            color: #fff;
+            font-weight: 500;
+            color: var(--text-main);
             margin-top: 40px;
             margin-bottom: 20px;
         }
         .details-wrapper p {
             color: var(--text-muted);
             margin-bottom: 24px;
-            line-height: 1.7;
+            line-height: 1.85; /* Airy line-height */
         }
         .details-wrapper ul.blog-list-item {
             margin: 24px 0;
@@ -41,7 +42,7 @@
             align-items: center;
             gap: 12px;
             font-weight: 600;
-            color: #fff;
+            color: var(--text-main);
         }
         .details-wrapper ul.blog-list-item li img {
             width: 16px;
@@ -55,24 +56,29 @@
             font-style: italic;
         }
         .sotcox-btn {
-            background: linear-gradient(135deg, var(--primary-accent), var(--secondary-accent));
+            background: var(--secondary-accent);
             padding: 14px 28px;
             border-radius: 30px;
-            font-weight: 700;
+            font-weight: 600;
             color: #fff;
             display: inline-flex;
             align-items: center;
-            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.25);
-            margin: 20px 0;
+            transition: var(--transition-normal);
         }
         .sotcox-btn:hover {
-            box-shadow: 0 8px 30px var(--accent-glow);
+            background: #af4d27;
             transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(200, 90, 50, 0.2);
         }
         .details-thumb img {
             border-radius: 16px;
             border: 1px solid var(--border-color);
             margin: 30px 0;
+        }
+        .sidebar-wrapper h3 {
+            font-family: var(--font-serif);
+            font-weight: 500;
+            color: var(--text-main);
         }
     </style>
 </head>
@@ -85,9 +91,7 @@
     <!-- ====== PRELOADER ====== -->
     <div class="preloader" id="preloader">
         <div class="preloader-inner">
-            <div class="preloader-logo">U</div>
-            <div class="preloader-text">UNIFY TECH</div>
-            <div class="preloader-bar">
+             <img class = "image" height="200" width="300"  src="logo.png">
                 <div class="preloader-progress"></div>
             </div>
         </div>
@@ -97,8 +101,7 @@
     <nav class="navbar scrolled" id="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo" id="nav-logo">
-                <span class="logo-icon">U</span>
-                <span class="logo-text">Unify<span class="logo-accent">Tech</span></span>
+                 <img class = "image" height="100px" width="140px" src="logo.png">
             </a>
 
             <ul class="nav-links" id="navLinks">
@@ -148,87 +151,168 @@
         <div class="container">
             <div class="about-grid" style="grid-template-columns: 1.3fr 0.7fr; align-items: start;">
                 <div class="details-wrapper reveal">
-                    <div class="details-content">
-                            <h2 class="sotcox-title mb-25">Taking your business ahead with designs that build strong customer base </h2>
-                            <p>In the digital era, designs play a crucial role as they are admired, shared, and discussed by everyone. Be it a website or a mobile app, the first impression is always based on its design. Therefore, it is imperative to have a captivating design, or visitors might lose interest. At Unify Tech, we understand the importance of impressive designs and offer sleek and standout UI/UX designs for various platforms, crafted by our experienced designing team.</p>
-                            <a href="contact.html">Get A Free Consultation  <span></span></a>
-                            <h5 class="mt-25 mb-25"> Unify Tech turns your ideas into impactful designs & adds value to your brand </h5>
-                            <p>In today’s digital era, designs play a crucial role as they are admired, shared, and discussed everywhere. Be it a website or a mobile app, the first impression is always based on its design. Therefore, it is imperative to have a captivating design, or visitors might lose interest.     </p>
-                            <p>At Unify Tech, we understand the importance of impressive designs and offer sleek and standout UI/UX designs for various platforms, crafted by our professional designing team.   </p>
-                           <p>We Weave Exceptional Designs with Unify Tech's Streamlined UI/UX Design Process </p>
-                            <ul class="list-unstyled blog-list-item">
-                                <li>
-                                    <img src="assets/img/icons/star.png" alt="">
-                                    Understanding
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Premium R & D 
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                   Analytics & Discovery 
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Wireframes
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Validation & Prototypes 
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Finalization & Coding 
-                                </li>
-                            </ul>
-
-                             <div class="details-thumb">
-                                <img src="assets/img/banner/banner-6.png" alt="img">
-                            </div>
-                             <h5 class="mt-25 mb-25">Design Your Digital Vision into Reality with Our smart UI/UX Services</h5>
-                             <ul class="list-unstyled blog-list-item">
-                                <li>
-                                    <img src="assets/img/icons/star.png" alt="">
-                                    Research & Analysis 
-                                </li>
-                                <p>We conduct research and analysis to determine which designs would best represent you while keeping your user interested, depending on the kind of business or service you provide. </p>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Consulting Services 
-                                </li>
-                                <p>Not sure where to begin when thinking about creating something? In your quest to reveal the remarkable designs you've been searching for, our top-notch advising services will be of great assistance. </p>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                   Interface Design 
-                                </li>
-                                <p>The ease with which a user can utilize an app or website can have a significant impact on how successful it is. Our designers put forth a lot of effort to create that user-friendly interface. </p>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Web Design 
-                                </li>
-                                <p>More people will stay on websites longer if they get dynamic user experience and engaging designs. We carefully provide all these qualities on your website.  </p>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                   Brand Design 
-                                </li>
-                                <p>The designs of brands stand out the most. The most successful brands in the world combine creativity, simplicity, and originality. We are adept at completing the task at hand. </p>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Mobile Design  
-                                </li>
-                                <p>Mobile apps are evaluated by how appealing their designs are, just as webpages. Our company has the ability to produce some creative and elegant designs for your priceless mobile apps. </p>
-                            </ul>
-                            <h2 class="sotcox-title mt-85 mb-25">Why Choose Unify Tech for UI/UX Designing  </h2>
-                            <p>We are not here to only create designs; we are here to give you an unforgettable design experience </p>
-                            <ul class="list-unstyled blog-list-item">
-                                <li>
-                                    <img src="assets/img/icons/star.png" alt="">
-                                    Fully Devoted Team  
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Shortened Deployment Period 
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Strategic Technological Approach   
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                Standard Industry Experience 
-                                </li>
-                            </ul>
-                            <a href="contact.html">Get Connected <span></span></a>
-
-
+                    <div class="details-content">
+
+                            <h2 class="sotcox-title mb-25">Taking your business ahead with designs that build strong customer base </h2>
+
+                            <p>In the digital era, designs play a crucial role as they are admired, shared, and discussed by everyone. Be it a website or a mobile app, the first impression is always based on its design. Therefore, it is imperative to have a captivating design, or visitors might lose interest. At Unify Tech, we understand the importance of impressive designs and offer sleek and standout UI/UX designs for various platforms, crafted by our experienced designing team.</p>
+
+                            <a href="contact.html">Get A Free Consultation  <span></span></a>
+
+                            <h5 class="mt-25 mb-25"> Unify Tech turns your ideas into impactful designs & adds value to your brand </h5>
+
+                            <p>In today’s digital era, designs play a crucial role as they are admired, shared, and discussed everywhere. Be it a website or a mobile app, the first impression is always based on its design. Therefore, it is imperative to have a captivating design, or visitors might lose interest.     </p>
+
+                            <p>At Unify Tech, we understand the importance of impressive designs and offer sleek and standout UI/UX designs for various platforms, crafted by our professional designing team.   </p>
+
+                           <p>We Weave Exceptional Designs with Unify Tech's Streamlined UI/UX Design Process </p>
+
+                            <ul class="list-unstyled blog-list-item">
+
+                                <li>
+
+                                    <img src="assets/img/icons/star.png" alt="">
+
+                                    Understanding
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Premium R & D 
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                   Analytics & Discovery 
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Wireframes
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Validation & Prototypes 
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Finalization & Coding 
+
+                                </li>
+
+                            </ul>
+
+
+
+                             <div class="details-thumb">
+
+                                <img src="assets/img/banner/banner-6.png" alt="img">
+
+                            </div>
+
+                             <h5 class="mt-25 mb-25">Design Your Digital Vision into Reality with Our smart UI/UX Services</h5>
+
+                             <ul class="list-unstyled blog-list-item">
+
+                                <li>
+
+                                    <img src="assets/img/icons/star.png" alt="">
+
+                                    Research & Analysis 
+
+                                </li>
+
+                                <p>We conduct research and analysis to determine which designs would best represent you while keeping your user interested, depending on the kind of business or service you provide. </p>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Consulting Services 
+
+                                </li>
+
+                                <p>Not sure where to begin when thinking about creating something? In your quest to reveal the remarkable designs you've been searching for, our top-notch advising services will be of great assistance. </p>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                   Interface Design 
+
+                                </li>
+
+                                <p>The ease with which a user can utilize an app or website can have a significant impact on how successful it is. Our designers put forth a lot of effort to create that user-friendly interface. </p>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Web Design 
+
+                                </li>
+
+                                <p>More people will stay on websites longer if they get dynamic user experience and engaging designs. We carefully provide all these qualities on your website.  </p>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                   Brand Design 
+
+                                </li>
+
+                                <p>The designs of brands stand out the most. The most successful brands in the world combine creativity, simplicity, and originality. We are adept at completing the task at hand. </p>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Mobile Design  
+
+                                </li>
+
+                                <p>Mobile apps are evaluated by how appealing their designs are, just as webpages. Our company has the ability to produce some creative and elegant designs for your priceless mobile apps. </p>
+
+                            </ul>
+
+                            <h2 class="sotcox-title mt-85 mb-25">Why Choose Unify Tech for UI/UX Designing  </h2>
+
+                            <p>We are not here to only create designs; we are here to give you an unforgettable design experience </p>
+
+                            <ul class="list-unstyled blog-list-item">
+
+                                <li>
+
+                                    <img src="assets/img/icons/star.png" alt="">
+
+                                    Fully Devoted Team  
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Shortened Deployment Period 
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Strategic Technological Approach   
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                Standard Industry Experience 
+
+                                </li>
+
+                            </ul>
+
+                            <a href="contact.html">Get Connected <span></span></a>
+
+
+
+
+
                         </div>
                 </div>
                 <div class="sidebar-wrapper reveal" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 24px; padding: 30px; position: sticky; top: 100px;">

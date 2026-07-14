@@ -19,16 +19,17 @@
             min-height: 80vh;
         }
         .details-wrapper h2.sotcox-title {
+            font-family: var(--font-serif);
             font-size: 2rem;
-            font-weight: 800;
-            color: #fff;
+            font-weight: 500;
+            color: var(--text-main);
             margin-top: 40px;
             margin-bottom: 20px;
         }
         .details-wrapper p {
             color: var(--text-muted);
             margin-bottom: 24px;
-            line-height: 1.7;
+            line-height: 1.85; /* Airy line-height */
         }
         .details-wrapper ul.blog-list-item {
             margin: 24px 0;
@@ -41,7 +42,7 @@
             align-items: center;
             gap: 12px;
             font-weight: 600;
-            color: #fff;
+            color: var(--text-main);
         }
         .details-wrapper ul.blog-list-item li img {
             width: 16px;
@@ -55,24 +56,29 @@
             font-style: italic;
         }
         .sotcox-btn {
-            background: linear-gradient(135deg, var(--primary-accent), var(--secondary-accent));
+            background: var(--secondary-accent);
             padding: 14px 28px;
             border-radius: 30px;
-            font-weight: 700;
+            font-weight: 600;
             color: #fff;
             display: inline-flex;
             align-items: center;
-            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.25);
-            margin: 20px 0;
+            transition: var(--transition-normal);
         }
         .sotcox-btn:hover {
-            box-shadow: 0 8px 30px var(--accent-glow);
+            background: #af4d27;
             transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(200, 90, 50, 0.2);
         }
         .details-thumb img {
             border-radius: 16px;
             border: 1px solid var(--border-color);
             margin: 30px 0;
+        }
+        .sidebar-wrapper h3 {
+            font-family: var(--font-serif);
+            font-weight: 500;
+            color: var(--text-main);
         }
     </style>
 </head>
@@ -85,9 +91,7 @@
     <!-- ====== PRELOADER ====== -->
     <div class="preloader" id="preloader">
         <div class="preloader-inner">
-            <div class="preloader-logo">U</div>
-            <div class="preloader-text">UNIFY TECH</div>
-            <div class="preloader-bar">
+             <img class = "image" height="200" width="300"  src="logo.png">
                 <div class="preloader-progress"></div>
             </div>
         </div>
@@ -97,8 +101,7 @@
     <nav class="navbar scrolled" id="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo" id="nav-logo">
-                <span class="logo-icon">U</span>
-                <span class="logo-text">Unify<span class="logo-accent">Tech</span></span>
+                 <img class = "image" height="100px" width="140px" src="logo.png">
             </a>
 
             <ul class="nav-links" id="navLinks">
@@ -148,71 +151,136 @@
         <div class="container">
             <div class="about-grid" style="grid-template-columns: 1.3fr 0.7fr; align-items: start;">
                 <div class="details-wrapper reveal">
-                    <div class="details-content">
-
-                        <h2 class="mb-25">Engage Your Customers & Give Them a Chance to Find Their Love Interest & friends</h2>
-
-                        <p>Discover the power of connection with our expert social media and dating app solutions. We specialize in crafting innovative platforms that bring people together, fostering meaningful connections and transforming the way individuals interact in the digital world. With our cutting-edge technology and tailored strategies, we help you build engaging social networks and dating applications that captivate users and drive growth. From seamless user experiences to advanced matching algorithms, our services are designed to enhance user satisfaction, promote user retention, and ultimately boost your business success. Trust our expertise to revolutionize the way people connect and find love in the digital age.</p>
-
-
-                        <p>Feel free to customize this description based on your specific services and target audience.</p>
-
-                        <div class="details-thumb">
-                            <img src="assets/img/banner/socialmedia_app_inner.jpg" alt="img">
-                        </div>
-
-                        <h3 class="mt-50 mb-25">Why Should You Get Involved in Dating App Development </h3>
-                        <p><b>Users show interest </b>– By 2024, number of users alone in the online dating component will be more than 279 million</p>
-
-                        <p><b>Users are willing to spend </b>– The average spending on dating apps by users is around $243 annually</p>
-
-                        <p><b>Increasing Growth Rate </b>– By the end of 2024, Revenue in the online dating segment is expected to reach US$2,530 Million </p>
-
-
-
-                        <h3 class="sotcox-title mt-50 mb-25"> Features to Empower Your Social Media & Dating App Idea?</h3>
-
-                        <p>User Profile Enhancement: We create compelling and attractive user profiles that highlight individuals' unique qualities and interests, making them stand out in the online dating world.</p>
-
-                        <p>Advanced Matching Algorithms: Our cutting-edge algorithms analyze user data and preferences to deliver highly accurate and personalized match suggestions, increasing the chances of meaningful connections.</p>
-
-                        <p>Chat and Messaging Features: We provide seamless chat and messaging functionalities within the app, allowing users to communicate effortlessly and build connections in a safe and secure environment.</p>
-
-                        <p>Social Network Integration: Our services include integration with popular social media platforms, enabling users to seamlessly connect their profiles and share updates across different networks.</p>
-
-                        <p>Privacy and Security Measures: We prioritize the privacy and security of our users, implementing robust measures to protect personal information and ensure a safe online dating experience.</p>
-
-                        <p>Customization and Branding: We offer customizable app designs and branding options to create a unique and memorable user experience that aligns with your brand identity.</p>
-
-                        <p>Real-time Notifications: Users can stay informed about new matches, messages, and activity through real-time notifications, enhancing user engagement and interaction.</p>
-
-                        <p>User Analytics and Insights: Our services provide valuable analytics and insights into user behavior and app usage, helping you make data-driven decisions to optimize your app's performance and user satisfaction.</p>
-
-
-                    </div><div class="details-content">
-                        <h5 class="mb-25">Be ready for a fully featured Dating App </h5>
-                        <p>If you have unique idea to bring the strangers together & make them fall in Love what could be sweeter than that? </p>
-                        <p><b>Unify Tech is here to give life to your idea </b></p>
-
-                        <h5 class="mb-15">Why Bring your Dating App idea to Unify Tech?</h5>
-                        <p> If you are looking for a next-level dating application that your users feel glued to, Unify Tech is the solution for you</p>
-
-                        <ul class="list-unstyled blog-list-item">
-                            <li>
-                                <img src="assets/img/icons/star.png" alt="">
-                                100% Customizable Solutions
-                            </li>
-                            <li><img src="assets/img/icons/star.png" alt="">
-                                Be market ready within no time
-                            </li>
-                            <li><img src="assets/img/icons/star.png" alt="">
-                                Fully scalable and robust
-                            </li>
-                            <li><img src="assets/img/icons/star.png" alt="">
-                                Be the owner of your IP Rights
-                            </li>
-                        </ul>
-
+                    <div class="details-content">
+
+
+
+                        <h2 class="mb-25">Engage Your Customers & Give Them a Chance to Find Their Love Interest & friends</h2>
+
+
+
+                        <p>Discover the power of connection with our expert social media and dating app solutions. We specialize in crafting innovative platforms that bring people together, fostering meaningful connections and transforming the way individuals interact in the digital world. With our cutting-edge technology and tailored strategies, we help you build engaging social networks and dating applications that captivate users and drive growth. From seamless user experiences to advanced matching algorithms, our services are designed to enhance user satisfaction, promote user retention, and ultimately boost your business success. Trust our expertise to revolutionize the way people connect and find love in the digital age.</p>
+
+
+
+
+
+                        <p>Feel free to customize this description based on your specific services and target audience.</p>
+
+
+
+                        <div class="details-thumb">
+
+                            <img src="assets/img/banner/socialmedia_app_inner.jpg" alt="img">
+
+                        </div>
+
+
+
+                        <h3 class="mt-50 mb-25">Why Should You Get Involved in Dating App Development </h3>
+
+                        <p><b>Users show interest </b>– By 2024, number of users alone in the online dating component will be more than 279 million</p>
+
+
+
+                        <p><b>Users are willing to spend </b>– The average spending on dating apps by users is around $243 annually</p>
+
+
+
+                        <p><b>Increasing Growth Rate </b>– By the end of 2024, Revenue in the online dating segment is expected to reach US$2,530 Million </p>
+
+
+
+
+
+
+
+                        <h3 class="sotcox-title mt-50 mb-25"> Features to Empower Your Social Media & Dating App Idea?</h3>
+
+
+
+                        <p>User Profile Enhancement: We create compelling and attractive user profiles that highlight individuals' unique qualities and interests, making them stand out in the online dating world.</p>
+
+
+
+                        <p>Advanced Matching Algorithms: Our cutting-edge algorithms analyze user data and preferences to deliver highly accurate and personalized match suggestions, increasing the chances of meaningful connections.</p>
+
+
+
+                        <p>Chat and Messaging Features: We provide seamless chat and messaging functionalities within the app, allowing users to communicate effortlessly and build connections in a safe and secure environment.</p>
+
+
+
+                        <p>Social Network Integration: Our services include integration with popular social media platforms, enabling users to seamlessly connect their profiles and share updates across different networks.</p>
+
+
+
+                        <p>Privacy and Security Measures: We prioritize the privacy and security of our users, implementing robust measures to protect personal information and ensure a safe online dating experience.</p>
+
+
+
+                        <p>Customization and Branding: We offer customizable app designs and branding options to create a unique and memorable user experience that aligns with your brand identity.</p>
+
+
+
+                        <p>Real-time Notifications: Users can stay informed about new matches, messages, and activity through real-time notifications, enhancing user engagement and interaction.</p>
+
+
+
+                        <p>User Analytics and Insights: Our services provide valuable analytics and insights into user behavior and app usage, helping you make data-driven decisions to optimize your app's performance and user satisfaction.</p>
+
+
+
+
+
+                    </div><div class="details-content">
+
+                        <h5 class="mb-25">Be ready for a fully featured Dating App </h5>
+
+                        <p>If you have unique idea to bring the strangers together & make them fall in Love what could be sweeter than that? </p>
+
+                        <p><b>Unify Tech is here to give life to your idea </b></p>
+
+
+
+                        <h5 class="mb-15">Why Bring your Dating App idea to Unify Tech?</h5>
+
+                        <p> If you are looking for a next-level dating application that your users feel glued to, Unify Tech is the solution for you</p>
+
+
+
+                        <ul class="list-unstyled blog-list-item">
+
+                            <li>
+
+                                <img src="assets/img/icons/star.png" alt="">
+
+                                100% Customizable Solutions
+
+                            </li>
+
+                            <li><img src="assets/img/icons/star.png" alt="">
+
+                                Be market ready within no time
+
+                            </li>
+
+                            <li><img src="assets/img/icons/star.png" alt="">
+
+                                Fully scalable and robust
+
+                            </li>
+
+                            <li><img src="assets/img/icons/star.png" alt="">
+
+                                Be the owner of your IP Rights
+
+                            </li>
+
+                        </ul>
+
+
+
                     </div>
                 </div>
                 <div class="sidebar-wrapper reveal" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 24px; padding: 30px; position: sticky; top: 100px;">

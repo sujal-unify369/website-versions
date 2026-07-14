@@ -19,16 +19,17 @@
             min-height: 80vh;
         }
         .details-wrapper h2.sotcox-title {
+            font-family: var(--font-serif);
             font-size: 2rem;
-            font-weight: 800;
-            color: #fff;
+            font-weight: 500;
+            color: var(--text-main);
             margin-top: 40px;
             margin-bottom: 20px;
         }
         .details-wrapper p {
             color: var(--text-muted);
             margin-bottom: 24px;
-            line-height: 1.7;
+            line-height: 1.85; /* Airy line-height */
         }
         .details-wrapper ul.blog-list-item {
             margin: 24px 0;
@@ -41,7 +42,7 @@
             align-items: center;
             gap: 12px;
             font-weight: 600;
-            color: #fff;
+            color: var(--text-main);
         }
         .details-wrapper ul.blog-list-item li img {
             width: 16px;
@@ -55,24 +56,29 @@
             font-style: italic;
         }
         .sotcox-btn {
-            background: linear-gradient(135deg, var(--primary-accent), var(--secondary-accent));
+            background: var(--secondary-accent);
             padding: 14px 28px;
             border-radius: 30px;
-            font-weight: 700;
+            font-weight: 600;
             color: #fff;
             display: inline-flex;
             align-items: center;
-            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.25);
-            margin: 20px 0;
+            transition: var(--transition-normal);
         }
         .sotcox-btn:hover {
-            box-shadow: 0 8px 30px var(--accent-glow);
+            background: #af4d27;
             transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(200, 90, 50, 0.2);
         }
         .details-thumb img {
             border-radius: 16px;
             border: 1px solid var(--border-color);
             margin: 30px 0;
+        }
+        .sidebar-wrapper h3 {
+            font-family: var(--font-serif);
+            font-weight: 500;
+            color: var(--text-main);
         }
     </style>
 </head>
@@ -85,9 +91,7 @@
     <!-- ====== PRELOADER ====== -->
     <div class="preloader" id="preloader">
         <div class="preloader-inner">
-            <div class="preloader-logo">U</div>
-            <div class="preloader-text">UNIFY TECH</div>
-            <div class="preloader-bar">
+             <img class = "image" height="200" width="300"  src="logo.png">
                 <div class="preloader-progress"></div>
             </div>
         </div>
@@ -97,8 +101,7 @@
     <nav class="navbar scrolled" id="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo" id="nav-logo">
-                <span class="logo-icon">U</span>
-                <span class="logo-text">Unify<span class="logo-accent">Tech</span></span>
+                 <img class = "image" height="100px" width="140px" src="logo.png">
             </a>
 
             <ul class="nav-links" id="navLinks">
@@ -148,135 +151,264 @@
         <div class="container">
             <div class="about-grid" style="grid-template-columns: 1.3fr 0.7fr; align-items: start;">
                 <div class="details-wrapper reveal">
-                    <div class="details-content">
-                            <h2 class="sotcox-title mb-15">Comprehensive Education App Development Services</h2>
-
-                            <h5 class="mb-25"> Transform the field of education with tech-enabled digital solutions </h5>
-
-                            <p>At Unify Technologies, we are dedicated to transforming education through innovative solutions that empower learners, educators, and institutions. With our expertise and technology-driven tools, we offer a comprehensive range of services to enhance the education experience. Our services include: </p>
-
-
-                            <p><b>Learning Management Systems (LMS):</b> We provide robust and user-friendly LMS platforms that facilitate seamless course delivery, content management, assessment, and collaboration, enabling institutions to create engaging online learning environments. </p>
-
-                            <p><b>Virtual Classroom Solutions:</b> Our virtual classroom platforms enable interactive and immersive online learning experiences, allowing educators to deliver live lectures, engage students in real-time discussions, and facilitate remote collaboration. </p>
-
-                            <p><b>Online Course Development:</b> We partner with educators and institutions to develop high-quality online courses, leveraging multimedia elements, interactive content, and instructional design principles to create engaging and effective learning experiences. </p>
-
-                            <p><b>Learning Analytics:</b> Our solutions integrate learning analytics to track student progress, assess performance, and gain insights into learning patterns, enabling institutions to personalize instruction, identify at-risk students, and improve learning outcomes. </p>
-
-                            <p><b>Mobile Learning (m-learning):</b> We optimize educational content for mobile devices and develop mobile learning applications, allowing learners to access educational resources anytime, anywhere, and on any device. </p>
-
-                            <p><b>Assessment and Testing Platforms:</b> We offer digital assessment and testing platforms that provide efficient and secure ways to administer exams, quizzes, and assessments, with features like automated grading and performance analytics.</p> 
-
-                            <p><b>Continuing Education and Professional Development:</b> We support institutions in delivering online continuing education and professional development programs, empowering learners to acquire new skills and stay updated in their fields. </p>
-
-                            <p><b>Education Technology Consulting:</b> Our experienced consultants provide strategic guidance and support in implementing educational technology solutions, helping institutions leverage technology effectively and achieve their educational goals.</p>
-
-
-
-                            <p>Partner with Unify Technologies to revolutionize education and unlock the potential of digital learning. Our tailored solutions and expertise will help you create engaging learning experiences, foster student success, and drive educational innovation. </p>
-
-                            <p>Feel free to customize this description based on your specific services and target audience within the education industry. </p> 
-
-                             <div class="details-thumb">
-                                <img src="assets/img/banner/education_inner.jpg" alt="img">
-                            </div>
-
-                            <h3 class="mt-50 mb-25">Diversify the Learning Experience with Our Dedicated Education Apps </h3>
-                            <p>Building education mobility solutions and taking education to the next level Features that Unify Tech Provides- </p>
-                            <ul class="list-unstyled blog-list-item">
-                                <li>
-                                    <img src="assets/img/icons/star.png" alt="">
-                                    Attendance Management  
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    E-certificate generator  
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Parents Login  
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Live Streaming 
-                                </li>
-                                 <li><img src="assets/img/icons/star.png" alt="">
-                                    Ratings Management   
-                                </li>
-                            </ul>
-
-                            <h4 class="sotcox-title mt-50 mb-25">What Do We Have for You? </h4>
-                            <p>With our solutions be ready to revolutionize the learning experience You’ll be getting - </p>
-
-
-                            <h4 class="mt-20 mb-25">Admin Panel  </h4>
-                            <ul class="list-unstyled blog-list-item">
-                                <li>
-                                    <img src="assets/img/icons/star.png" alt="">
-                                    A single platform to supervise all teachers & students   
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Total revenue generated & classes conducted   
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    One-stop solution to manage offers & promotions   
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Aerial view on all transactions & payments    
-                                </li>
-                            </ul>   
-
-
-                            <h4 class="mt-20 mb-25">Teacher Dashboard </h4>
-                            <ul class="list-unstyled blog-list-item">
-                                <li>
-                                    <img src="assets/img/icons/star.png" alt="">
-                                    A single platform to connect with the entire class     
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Get a single panel to track progress on assignments    
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Real-time interactions with students via audio/video calling     
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    To manage the fees of students and other payments     
-                                </li>
-                            </ul> 
-
-
-                            <h4 class="mt-20 mb-25">Student Application   </h4>
-                            <ul class="list-unstyled blog-list-item">
-                                <li>
-                                    <img src="assets/img/icons/star.png" alt="">
-                                    An effective way to manage all the courses       
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Advanced push notifications to stay updated    
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Connect with teachers & solve queries       
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    Track the progress of the assignments       
-                                </li>
-                            </ul>
-
-                            <h4 class="sotcox-title mt-25 mb-25">What Makes Us Different? </h4>
-                            <p>We are here to give you an exceptional and unique learning experience</p>
-                            <ul class="list-unstyled blog-list-item">
-                                <li>
-                                    <img src="assets/img/icons/star.png" alt="">
-                                    AR & VR based solutions enhance the learning experience         
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                   Freedom for students to book classes conveniently     
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                   AI-based e-learning application for personalized teachings       
-                                </li>
-                                <li><img src="assets/img/icons/star.png" alt="">
-                                    E-learning solutions to build an online portal for schools, academies, etc.        
-                                </li>
-                            </ul>      
+                    <div class="details-content">
+
+                            <h2 class="sotcox-title mb-15">Comprehensive Education App Development Services</h2>
+
+
+
+                            <h5 class="mb-25"> Transform the field of education with tech-enabled digital solutions </h5>
+
+
+
+                            <p>At Unify Technologies, we are dedicated to transforming education through innovative solutions that empower learners, educators, and institutions. With our expertise and technology-driven tools, we offer a comprehensive range of services to enhance the education experience. Our services include: </p>
+
+
+
+
+
+                            <p><b>Learning Management Systems (LMS):</b> We provide robust and user-friendly LMS platforms that facilitate seamless course delivery, content management, assessment, and collaboration, enabling institutions to create engaging online learning environments. </p>
+
+
+
+                            <p><b>Virtual Classroom Solutions:</b> Our virtual classroom platforms enable interactive and immersive online learning experiences, allowing educators to deliver live lectures, engage students in real-time discussions, and facilitate remote collaboration. </p>
+
+
+
+                            <p><b>Online Course Development:</b> We partner with educators and institutions to develop high-quality online courses, leveraging multimedia elements, interactive content, and instructional design principles to create engaging and effective learning experiences. </p>
+
+
+
+                            <p><b>Learning Analytics:</b> Our solutions integrate learning analytics to track student progress, assess performance, and gain insights into learning patterns, enabling institutions to personalize instruction, identify at-risk students, and improve learning outcomes. </p>
+
+
+
+                            <p><b>Mobile Learning (m-learning):</b> We optimize educational content for mobile devices and develop mobile learning applications, allowing learners to access educational resources anytime, anywhere, and on any device. </p>
+
+
+
+                            <p><b>Assessment and Testing Platforms:</b> We offer digital assessment and testing platforms that provide efficient and secure ways to administer exams, quizzes, and assessments, with features like automated grading and performance analytics.</p> 
+
+
+
+                            <p><b>Continuing Education and Professional Development:</b> We support institutions in delivering online continuing education and professional development programs, empowering learners to acquire new skills and stay updated in their fields. </p>
+
+
+
+                            <p><b>Education Technology Consulting:</b> Our experienced consultants provide strategic guidance and support in implementing educational technology solutions, helping institutions leverage technology effectively and achieve their educational goals.</p>
+
+
+
+
+
+
+
+                            <p>Partner with Unify Technologies to revolutionize education and unlock the potential of digital learning. Our tailored solutions and expertise will help you create engaging learning experiences, foster student success, and drive educational innovation. </p>
+
+
+
+                            <p>Feel free to customize this description based on your specific services and target audience within the education industry. </p> 
+
+
+
+                             <div class="details-thumb">
+
+                                <img src="assets/img/banner/education_inner.jpg" alt="img">
+
+                            </div>
+
+
+
+                            <h3 class="mt-50 mb-25">Diversify the Learning Experience with Our Dedicated Education Apps </h3>
+
+                            <p>Building education mobility solutions and taking education to the next level Features that Unify Tech Provides- </p>
+
+                            <ul class="list-unstyled blog-list-item">
+
+                                <li>
+
+                                    <img src="assets/img/icons/star.png" alt="">
+
+                                    Attendance Management  
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    E-certificate generator  
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Parents Login  
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Live Streaming 
+
+                                </li>
+
+                                 <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Ratings Management   
+
+                                </li>
+
+                            </ul>
+
+
+
+                            <h4 class="sotcox-title mt-50 mb-25">What Do We Have for You? </h4>
+
+                            <p>With our solutions be ready to revolutionize the learning experience You’ll be getting - </p>
+
+
+
+
+
+                            <h4 class="mt-20 mb-25">Admin Panel  </h4>
+
+                            <ul class="list-unstyled blog-list-item">
+
+                                <li>
+
+                                    <img src="assets/img/icons/star.png" alt="">
+
+                                    A single platform to supervise all teachers & students   
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Total revenue generated & classes conducted   
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    One-stop solution to manage offers & promotions   
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Aerial view on all transactions & payments    
+
+                                </li>
+
+                            </ul>   
+
+
+
+
+
+                            <h4 class="mt-20 mb-25">Teacher Dashboard </h4>
+
+                            <ul class="list-unstyled blog-list-item">
+
+                                <li>
+
+                                    <img src="assets/img/icons/star.png" alt="">
+
+                                    A single platform to connect with the entire class     
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Get a single panel to track progress on assignments    
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Real-time interactions with students via audio/video calling     
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    To manage the fees of students and other payments     
+
+                                </li>
+
+                            </ul> 
+
+
+
+
+
+                            <h4 class="mt-20 mb-25">Student Application   </h4>
+
+                            <ul class="list-unstyled blog-list-item">
+
+                                <li>
+
+                                    <img src="assets/img/icons/star.png" alt="">
+
+                                    An effective way to manage all the courses       
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Advanced push notifications to stay updated    
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Connect with teachers & solve queries       
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    Track the progress of the assignments       
+
+                                </li>
+
+                            </ul>
+
+
+
+                            <h4 class="sotcox-title mt-25 mb-25">What Makes Us Different? </h4>
+
+                            <p>We are here to give you an exceptional and unique learning experience</p>
+
+                            <ul class="list-unstyled blog-list-item">
+
+                                <li>
+
+                                    <img src="assets/img/icons/star.png" alt="">
+
+                                    AR & VR based solutions enhance the learning experience         
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                   Freedom for students to book classes conveniently     
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                   AI-based e-learning application for personalized teachings       
+
+                                </li>
+
+                                <li><img src="assets/img/icons/star.png" alt="">
+
+                                    E-learning solutions to build an online portal for schools, academies, etc.        
+
+                                </li>
+
+                            </ul>      
+
                         </div>
                 </div>
                 <div class="sidebar-wrapper reveal" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 24px; padding: 30px; position: sticky; top: 100px;">
